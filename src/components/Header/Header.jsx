@@ -228,7 +228,7 @@ const Header = () => {
               <div className="logo">
                 <a href="">
                   <img
-                    src="/logo/trans_bg.png"
+                    src="/assets/trans_bg.png"
                     alt=""
                     style={{ width: "56px" }}
                   />

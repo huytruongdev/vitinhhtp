@@ -73,7 +73,7 @@ const Footer = () => {
                 <p>
                   <a href="">
                     <img
-                      src="/logo/trans_bg.png"
+                      src="/assets/trans_bg.png"
                       alt=""
                       style={{ width: "100px" }}
                     />
@@ -82,18 +82,17 @@ const Footer = () => {
                 <span className="links-group-title">Tổng đài</span>
                 <p className="hotline">
                   <span>
-                    Mua hàng:
-                    <b>19001903</b>
+                    Mua hàng: <b>19001903</b>
                   </span>
                   <span>
-                    Khiếu nại:
-                    <b>19001903</b>
+                    Khiếu nại:<b>19001903</b>
                   </span>
                 </p>
+                
                 <span className="links-group-title">
                   Phương thức thanh toán
                 </span>
-                <img src="/image/pttt.png" alt="" />
+                <img src="/assets/pttt.png" alt="" />
               </div>
               <div className="links-group-container">
                 <span className="links-group-title">Giới thiệu HTP PC</span>
@@ -235,14 +234,14 @@ const Footer = () => {
               <div className="certificate">
                 <a href="">
                   <img
-                    src="/image/certificate1.png"
+                    src="/assets/certificate1.png"
                     alt=""
                     style={{ width: "120px", height: "50px" }}
                   />
                 </a>
                 <a href="">
                   <img
-                    src="/image/certificate2.png"
+                    src="/assets/certificate2.png"
                     alt=""
                     style={{ width: "100px", height: "42px" }}
                   />
