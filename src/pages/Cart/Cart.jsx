@@ -1,6 +1,5 @@
 import React from 'react'
 import './Cart.scss'
-import './script.js'
 
 const Cart = () => {
     return (
