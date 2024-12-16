@@ -6,7 +6,7 @@ const Header = () => {
     <header className="header-2019">
       <div className="header-wrapper">
         <div className="bannerdichvutot">
-          <div className="container-2019">
+          <div className="container-main">
             <a href="https://dichvutot.vn/" target="_blank">
               <img src="" alt="" className="loading" />
             </a>
@@ -221,7 +221,7 @@ const Header = () => {
           </div>
         </div>
       </div>
-      <div className="container-2019">
+      <div className="container-main">
         <div id="myHeader" className="header-bottom">
           <div className="header-bottom-row pd-10">
             <div className="header-bottom-left">
@@ -296,7 +296,7 @@ const Header = () => {
             </div>
             <div className="user-action">
               <div className="cart">
-                <a href="/cart" className="cart-summary">
+                <a href="/src/pages/Cart.jsx" className="cart-summary">
                   <div className="header-cart-item">
                     <i className="fa-solid fa-cart-shopping"></i>
                     <span className="cart-text">Giỏ hàng</span>

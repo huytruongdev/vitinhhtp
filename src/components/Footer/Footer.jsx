@@ -20,7 +20,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="footer-links">
-        <div className="container-2019">
+        <div className="container-main">
           <div className="khaipv-footer-policies">
             <div className="policy-container">
               <div className="policy-icon">
@@ -67,7 +67,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="footer-info">
-          <div className="container-2019">
+          <div className="container-main">
             <div className="khaipv-footer-links">
               <div className="links-group-container">
                 <p>
@@ -214,7 +214,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="footer-end">
-          <div className="container-2019">
+          <div className="container-main">
             <div className="footer-copyright">
               <div className="khaipv-copyright">
                 <p>© 2024 2024 Công ty Cổ phần đầu tư công nghệ HTP PC</p>
