@@ -1,4 +1,4 @@
-import "./Home.css";
+import "./Home.scss";
 import Slider from "react-slick";
 const Home = () => {
   const settings = {
@@ -8,7 +8,7 @@ const Home = () => {
     slidesToScroll: 1,
     arrows: false,
     autoplay: true,
-    speed:1200,
+    speed:1000,
     autoplaySpeed: 1500
   };
   return (
@@ -25,6 +25,86 @@ const Home = () => {
                   </a>
                 </div>
                 <i className="fa-solid fa-angle-right"></i>
+                <div className="popup-content">
+                  <div className="popup-container">
+                    <div className="popup-container-item">
+                      <span className="popup-box-title">
+                        Laptop Theo Hãng
+                      </span>
+                      <p>
+                        <a href="">Latop Acer</a>
+                        <i className="fa-solid fa-angle-right"></i>
+                      </p>
+                      <p>
+                        <a href="">Latop Asus</a>
+                        <i className="fa-solid fa-angle-right"></i>
+                      </p>
+                      <p>
+                        <a href="">Latop DellDell</a>
+                        <i className="fa-solid fa-angle-right"></i>
+                      </p>
+                      <p>
+                        <a href="">Latop HP</a>
+                        <i className="fa-solid fa-angle-right"></i>
+                      </p>
+                      <p>
+                        <a href="">Latop LenovoLenovo</a>
+                        <i className="fa-solid fa-angle-right"></i>
+                      </p>
+                      <p>
+                        <a href="">Latop Apple</a>
+                        <i className="fa-solid fa-angle-right"></i>
+                      </p>
+                      <p>
+                        <a href="">Latop MSI</a>
+                        <i className="fa-solid fa-angle-right"></i>
+                      </p>
+                      <p>
+                        <a href="">Latop LGG</a>
+                        <i className="fa-solid fa-angle-right"></i>
+                      </p>
+                      <p>
+                        <a href="">Latop VAIO</a>
+                        <i className="fa-solid fa-angle-right"></i>
+                      </p>
+
+                    </div>
+                    <div className="popup-container-item">
+                      <span className="popup-box-title">
+                        Laptop Theo Nhu Câu
+                      </span>
+                      <p>
+                        <a href="">Latop Acer</a>
+                        <i className="fa-solid fa-angle-right"></i>
+                      </p>
+                      <p>
+                        <a href="">Latop Acer</a>
+                        <i className="fa-solid fa-angle-right"></i>
+                      </p>
+                      <p>
+                        <a href="">Latop Acer</a>
+                        <i className="fa-solid fa-angle-right"></i>
+                      </p>
+                      <p>
+                        <a href="">Latop Acer</a>
+                        <i className="fa-solid fa-angle-right"></i>
+                      </p>
+                      <p>
+                        <a href="">Latop Acer</a>
+                        <i className="fa-solid fa-angle-right"></i>
+                      </p>
+                      <p>
+                        <a href="">Latop Acer</a>
+                        <i className="fa-solid fa-angle-right"></i>
+                      </p>
+                      <p>
+                        <a href="">Latop Acer</a>
+                        <i className="fa-solid fa-angle-right"></i>
+                      </p>
+                      
+                    </div>
+                  </div>
+                </div>
               </li>
               <li className="li-catcha-menu">
                 <div className="nav-menu">
@@ -34,6 +114,9 @@ const Home = () => {
                   </a>
                 </div>
                 <i className="fa-solid fa-angle-right"></i>
+                <div className="popup-content">
+                  Chi tiết sản phẩm: Laptop, Macbook, Surface
+                </div>
               </li>
               <li className="li-catcha-menu">
                 <div className="nav-menu">
@@ -256,7 +339,27 @@ const Home = () => {
                   >
                     <div className="item-img">
                       <a href="">
-                        <img src="/assets/item4.png" alt="" />
+                        <img src="/assets/item4.jpg" alt="" />
+                      </a>
+                    </div>
+                  </div>
+                  <div
+                  className="owl-item"
+                  style={{ "width": "atuo", "height":"480" ,"margin-right": "10px" }}
+                  >
+                    <div className="item-img">
+                      <a href="">
+                        <img src="/assets/item5.png" alt="" />
+                      </a>
+                    </div>
+                  </div>
+                  <div
+                  className="owl-item"
+                  style={{ "width": "atuo", "height":"480" ,"margin-right": "10px" }}
+                  >
+                    <div className="item-img">
+                      <a href="">
+                        <img src="/assets/item6.png" alt="" />
                       </a>
                     </div>
                   </div>

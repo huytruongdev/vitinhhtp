@@ -1,7 +1,6 @@
-import { Link, Outlet } from "react-router-dom"
-import Header from "@/components/Header/Header"
-import Footer from "@/components/Footer/Footer"
-import { Container } from "@mui/material"
+import { Link, Outlet } from "react-router-dom";
+import Header from "@/components/Header/Header";
+import Footer from "@/components/Footer/Footer";
 
 const App = () => {
   return (
@@ -25,13 +24,11 @@ const App = () => {
         </ul>
       </nav>
       <main>
-        <Container>
-          <Outlet />
-        </Container>
+        <Outlet />
       </main>
       <Footer />
     </>
-  )
-}
+  );
+};
 
-export default App
+export default App;
