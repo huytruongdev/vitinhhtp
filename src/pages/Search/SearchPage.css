@@ -14,15 +14,17 @@
 
  .body-new .cate-top{
     
-    width: 100%;
-    height: 80px;
+   padding: 10px;
+   width: 100%;
+   height: 50px;
  
  }
 
 
  .body-new .cate-top .container-2019 .current-cate-title{
-   display: flex;
-   width: 30%;
+   display: inline-block;
+   position: relative;
+   width: 270px;
    /* background-color: aqua; */
    font-family: 'Open Sans', sans-serif;
    border-bottom: 3px solid #3c4a65;
@@ -31,11 +33,12 @@
  }
 
  .body-new .cate-top .container-2019 .current-cate-title .current-cate-text {
+   display: inline-block;
    font-size: 24px;
    color: #3c4a65;
-   justify-content: center;
-   padding: 20px 0px 20px 20px;
-   width: 30%;
+   text-transform: uppercase;
+   letter-spacing: 1px;
+   margin-bottom: 0;
  }
 
  .body-new .cate-content .cate-left .title .btn-title {
@@ -53,11 +56,9 @@
 
 
  .body-new .cate-top .container-2019 .current-cate-title .current-cate-span {
-   font-size: 16px;
-   color: #333e48;
-   align-content: center;
-   left: 20px;
-   width: 70%;
+   font-size: 12px;
+   color: #999999;
+   
 
  }
  .body-new .cate-content{
@@ -491,6 +492,18 @@ padding: 10px;
    font-size: 13px;
    color: #333e48;
    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Loại bỏ mũi tên trong input number cho Chrome, Safari, Edge, Opera */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Loại bỏ mũi tên trong input number cho Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
 }
 
 

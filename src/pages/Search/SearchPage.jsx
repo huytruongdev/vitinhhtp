@@ -13,6 +13,34 @@ import { useState } from "react";
 const SearchPage = () => {
     const [block, setBlock] = useState(false);
     const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
+    const [minPrice, setMinPrice] = useState("1.000.000");
+    const [maxPrice, setMaxPrice] = useState("2.000.000");
+    const [leftPosition, setLeftPosition] = useState(0);
+    const [rightPosition, setRightPosition] = useState(0);
+
+    const formatNumber = (value) => {
+        return value.replace(/\B(?=(\d{3})+(?!\d))/g, ".");
+      };
+
+      const handleLeftInputChange = (event) => {
+        const value = event.target.value.replace(/[^\d]/g, ""); // Chỉ giữ số
+        const formattedValue = formatNumber(value); // Định dạng số
+      
+        if (formattedValue.length <= 10) {
+          setLeftPosition(value); // Cập nhật giá trị raw (không định dạng)
+          setMinPrice(formattedValue); // Cập nhật giá trị đã định dạng
+        }
+      
+        console.log("Giá trị mới của leftPosition:", value); 
+      };
+
+
+
+      const handleRightInputChange = (event) => {
+        setRightPosition(event.target.value); // Cập nhật state
+        console.log("Giá trị mới của rightPosition:", rightPosition); // Log giá trị
+      };
+  
 
     return (
         <div className='body-new'>
@@ -23,7 +51,7 @@ const SearchPage = () => {
                         <h4 className='current-cate-text'>
                             Tìm Kiếm: 
                         </h4>
-                        <span className='current-cate-span'>Tổng có 3 Sản Phẩm </span>
+                        <span className='current-cate-span'>(Tổng có 3 Sản Phẩm)</span>
                     </div>
                 </div>
 
@@ -168,11 +196,12 @@ const SearchPage = () => {
                         <div className='input-price-filter'>
                             <p>
                             Từ
-                                <input type="text" id='input-min-price-filter'  min="0" />
+                                <input type="number" id='input-min-price-filter'  min="0" value={minPrice} onChange={handleLeftInputChange}/>
+
                            </p>
                            <p>
                             Đến
-                                <input type="text" id='input-max-price-filter'  min="0" />
+                                <input type="number" id='input-max-price-filter'  min="0" value={maxPrice} onChange={handleRightInputChange}/>
                            </p>
                         </div>
                         <div className='info-finter-price'>
@@ -220,8 +249,14 @@ const SearchPage = () => {
                                 <select className="list-sort" 
                                         id="page-selector" 
                                         onChange={(e) => window.location.href = e.target.value}>
-                                        <option value="#">Tình trạng kho hàng</option>
-                                        <option value="#">Còn hàng </option>
+                                        <option value="#">Sắp xếp theo</option>
+                                        <option value="#">Mới nhất </option>
+                                        <option value="#">Giá tăng dần </option>
+                                        <option value="#">Giá giảm dần </option>
+                                        <option value="#">Lượt xem </option>
+                                        <option value="#">Đánh giá </option>
+                                        <option value="#">Tên A- &gt; Z</option>
+
                                        
                                 </select>                                                   
                                 </div>
