@@ -20,9 +20,9 @@ const SearchPage = () => {
             <div className='cate-top'>
                 <div className='container-2019'>
                     <div className='current-cate-title'>
-                        <h1 className='current-cate-text'>
+                        <h4 className='current-cate-text'>
                             Tìm Kiếm: 
-                        </h1>
+                        </h4>
                         <span className='current-cate-span'>Tổng có 3 Sản Phẩm </span>
                     </div>
                 </div>
@@ -123,7 +123,7 @@ const SearchPage = () => {
                     </div>
 
                     <div className='p-filter-item'>
-                         <span className='filter-title'> KHOẢN GIÁ </span>
+                         <span className='filter-title'> KHOẢNG GIÁ </span>
                          <div className='filter-rulers'></div>
                         <div className='p-filter-list-value p-filter-list-value-check-price'>
                         <Form>
@@ -272,7 +272,7 @@ const SearchPage = () => {
                                     
                                     }}
                                     >
-                                    <img src="/src/pages/Search/images/1610_bang-gia-may-vi-tinh.png" alt="" className='img-load'/>
+                                    <img src="assets/1610_bang-gia-may-vi-tinh.png" alt="" className='img-load'/>
                                     <div className='tool-tip' style={{
                                           display: block ? 'block' : 'none',
                                           left: `calc(0px + ${mousePosition.x}px)`, // ❌ Lỗi ReferenceError
