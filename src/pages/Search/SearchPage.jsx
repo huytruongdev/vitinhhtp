@@ -13,8 +13,8 @@ import { useState } from "react";
 const SearchPage = () => {
     const [block, setBlock] = useState(false);
     const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
-    const [minPrice, setMinPrice] = useState("1.000.000");
-    const [maxPrice, setMaxPrice] = useState("2.000.000");
+    const [minPrice, setMinPrice] = useState("");
+    const [maxPrice, setMaxPrice] = useState("");
     const [leftPosition, setLeftPosition] = useState(0);
     const [rightPosition, setRightPosition] = useState(0);
 
@@ -23,24 +23,32 @@ const SearchPage = () => {
       };
 
       const handleLeftInputChange = (event) => {
-        const value = event.target.value.replace(/[^\d]/g, ""); // Chỉ giữ số
-        const formattedValue = formatNumber(value); // Định dạng số
-      
+        const rowvalue = event.target.value.replace(/[^\d]/g, "");
+        const formattedValue = formatNumber(rowvalue);
+        const left = (rowvalue / 100000000) * 250;
+        console.log("Giá trị left: " + left)
+        setLeftPosition(left);
         if (formattedValue.length <= 10) {
-          setLeftPosition(value); // Cập nhật giá trị raw (không định dạng)
-          setMinPrice(formattedValue); // Cập nhật giá trị đã định dạng
-        }
+
+          setMinPrice(formattedValue); 
       
-        console.log("Giá trị mới của leftPosition:", value); 
-      };
+        console.log("Giá trị mới của leftPosition:", rowvalue); 
+      };}
 
 
 
       const handleRightInputChange = (event) => {
-        setRightPosition(event.target.value); // Cập nhật state
-        console.log("Giá trị mới của rightPosition:", rightPosition); // Log giá trị
+        const value = event.target.value.replace(/[^\d]/g, "");
+        
+        const formattedValue = formatNumber(value); 
+        const right = (value / 100000000) * 250;
+        if (formattedValue.length <= 10) {
+             setRightPosition(right); 
+            setMaxPrice(formattedValue); 
+      
+        console.log("Giá trị mới của rightPosition:", value); 
       };
-  
+    }
 
     return (
         <div className='body-new'>
@@ -188,20 +196,21 @@ const SearchPage = () => {
 
                         <div className='slider-range'>
                             <div className='ui-slider-range ui-corner-all ui-widget-header'>
-                                <div className ='button-slider-l'></div>
-                                <div className ='button-slider-r'></div>
+                            <div className='button-slider-l' style={{ left: `${leftPosition}px` }}></div>
+
+                                <div className ='button-slider-r'  style={{ right: `${rightPosition}px` }}></div>
                             </div>
 
                         </div>
                         <div className='input-price-filter'>
                             <p>
                             Từ
-                                <input type="number" id='input-min-price-filter'  min="0" value={minPrice} onChange={handleLeftInputChange}/>
+                                <input type="text" id='input-min-price-filter'  min="0" max={5000000} value={minPrice} onChange={handleLeftInputChange}  placeholder="Nhập giá trị (tối đa 10.000.000)"/>
 
                            </p>
                            <p>
                             Đến
-                                <input type="number" id='input-max-price-filter'  min="0" value={maxPrice} onChange={handleRightInputChange}/>
+                                <input type="text" id='input-max-price-filter'  min="0"  value={maxPrice} onChange={handleRightInputChange} placeholder="Nhập giá trị (tối đa 100.000.000)"/>
                            </p>
                         </div>
                         <div className='info-finter-price'>
