@@ -299,13 +299,13 @@ const Home = () => {
               </li>
             </ul>
           </div>
-          <div className="home-page-slider-right">
+          <div className="home-page-slider-center">
             <div className="home-slider">
               <div className="owl-stage-outer">
                 <Slider {...settings}>
                   <div
                   className="owl-item"
-                  style={{ "width": "auto", "height":"480" ,"margin-right": "10px" }}
+                  style={{ "width": "auto" ,"margin-right": "10px" }}
                   >
                     <div className="item-img">
                       <a href="">
@@ -315,7 +315,7 @@ const Home = () => {
                   </div>
                   <div
                   className="owl-item"
-                  style={{ "width": "atuo", "height":"480" ,"margin-right": "10px" }}
+                  style={{ "width": "atuo","margin-right": "10px" }}
                   >
                     <div className="item-img">
                       <a href="">
@@ -325,7 +325,7 @@ const Home = () => {
                   </div>
                   <div
                   className="owl-item"
-                  style={{ "width": "atuo", "height":"480" ,"margin-right": "10px" }}
+                  style={{ "width": "atuo","margin-right": "10px" }}
                   >
                     <div className="item-img">
                       <a href="">
@@ -335,7 +335,7 @@ const Home = () => {
                   </div>
                   <div
                   className="owl-item"
-                  style={{ "width": "atuo", "height":"480" ,"margin-right": "10px" }}
+                  style={{ "width": "atuo" ,"margin-right": "10px" }}
                   >
                     <div className="item-img">
                       <a href="">
@@ -345,7 +345,7 @@ const Home = () => {
                   </div>
                   <div
                   className="owl-item"
-                  style={{ "width": "atuo", "height":"480" ,"margin-right": "10px" }}
+                  style={{ "width": "atuo" ,"margin-right": "10px" }}
                   >
                     <div className="item-img">
                       <a href="">
@@ -355,7 +355,7 @@ const Home = () => {
                   </div>
                   <div
                   className="owl-item"
-                  style={{ "width": "atuo", "height":"480" ,"margin-right": "10px" }}
+                  style={{ "width": "atuo","margin-right": "10px" }}
                   >
                     <div className="item-img">
                       <a href="">
@@ -378,6 +378,22 @@ const Home = () => {
               </a>
             </div>
 
+          </div>
+          <div className="home-page-slider-right">
+            <div className="right-slider">
+              <a href="http://" target="_blank" rel="noopener noreferrer">
+                <img src="/assets/itemb5.jpg" alt="" />
+              </a>
+              <a href="http://" target="_blank" rel="noopener noreferrer">
+                <img src="/assets/itemb4.png" alt="" />
+              </a>
+              <a href="http://" target="_blank" rel="noopener noreferrer">
+                <img src="/assets/itemb6.png" alt="" />
+              </a>
+              <a href="http://" target="_blank" rel="noopener noreferrer">
+                <img src="/assets/itemb7.png" alt="" />
+              </a>
+            </div>
           </div>
         </div>
       </div>
