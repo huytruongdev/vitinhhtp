@@ -1,0 +1,742 @@
+.container{
+    width: 100%;
+    padding-top: 0px;
+    box-sizing: border-box;
+    background-color: white;
+    height: calc(100% - 1600px);
+}
+.bt1{
+    width: 100%;
+    padding: 20px 0px;
+    background-color: white;
+    height: 112px;
+    display: flex;
+    box-sizing: border-box;
+    border-bottom: 0.5px solid #e1e1e1;
+
+}
+.bt2{
+    width: 70%;
+    float: left;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: auto;
+    margin-left: auto;
+}
+.bt3{
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+}
+.bt31{
+    width: 15%;
+    float: left;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    height: 100%;
+    box-sizing: border-box;
+}
+.bt32 {
+    width: 50%;
+    float: left;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    height: 100%;
+}
+.bt321{
+    width: 133.3333%;
+    float: left;
+    text-align: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.txt
+{
+    width: 100%;
+    float: left;
+    margin:5px 0px;
+    font-size: 14px;
+}
+.bar{
+    width: 100%;
+    height: 5px;
+    background: blue;
+    position: absolute;
+    bottom: 13px;
+    left: calc(50% + 2px);
+    z-index: 0;
+}
+.circle {
+    width: 30px;
+    height: 30px;
+    float: left;
+    border-radius: 50%;
+    background: blue;
+    text-align: center;
+    line-height: 30px;
+    font-size: 14px;
+    border: 1px solid blue;
+    color: #000;
+    position: relative;
+    z-index: 6;
+    color: white;
+}
+.phone-cart {
+    width: 12%;
+    float: right;
+    display: flex;
+    align-items: center;
+    padding:1px;
+    border: 1px solid #e1e1e1;
+    border-radius: 23px;
+    height: 65%;
+    box-sizing: border-box;
+}
+.icon-c {
+    width: 65px;
+    height: 40px;
+    float: left;
+    margin-right: 10px;
+    border-radius: 50%;
+    background: blue;
+    font-size: 20px;
+    text-align: center;
+    line-height: 40px;
+    color: #fff;
+}
+.fas {
+    font-family: "Font Awesome 5 Pro";
+    font-weight: 900;
+    content: "\f095";
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1;
+}
+.txt1 {
+    width: 100%;
+    float: left;
+    font-size: 14px;
+    line-height: 1;
+    color: #000;
+}
+.txt2 {
+    width: 100%;
+    float: left;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1;
+    color: #30327c;
+}
+
+.giua {
+    display: flex;
+    background: #fff;
+    padding: 25px 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+}
+.g1 {
+    width: 100%;
+    float: left;
+    display: flex;
+    justify-content: space-between;
+}
+.bentrai{
+    width: 65%;
+    float: left;
+}
+.traitren{
+    width: 100%;
+    float: left;
+    padding-top: 20px;
+    height: 1000px;
+}
+.vientrai{
+    width: 100%;
+    float: left;
+}
+.chutrai{
+    width: 100%;
+    float: left;
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: 700;
+    color: #000;
+}
+.box-address{
+    width: 100%;
+    float: left;
+    padding: 32px;
+    border: 1px solid #e1e1e1;
+    border-radius: 6px;
+    justify-content: center;
+    margin-bottom: 30px;
+    display: none;
+    box-sizing: border-box;
+}
+.ba1{
+    width: 782px;
+    margin: 0 auto;
+    background-color: aqua;
+}
+.item-tk {
+    width: 100%;
+    float: left;
+    margin-bottom: 10px;
+    display: flex;
+}
+.item-tk-ct {
+    width: calc(100% - 180px);
+    float: left;
+    position: relative;
+}
+.inputText {
+    border: 1px solid #e1e1e1;
+    border-radius: 5px;
+    padding: 0 10px;
+    width: 100%;
+    height: 40px;
+    border: 1px solid #ddd;
+    padding-left: 5px;
+}
+.item-tk label {
+    width: 180px;
+    float: left;
+    font-size: 16px;
+    line-height: 1.5;
+    display: flex;
+    height: 40px;
+    align-items: center;
+    font-weight: 700;
+}
+.title-c-ct {
+    width: 100%;
+    float: left;
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: 700;
+    color: #000;
+}
+.box-cart-ship-method {
+    width: 100%;
+    float: left;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #e1e1e1;
+    box-sizing: border-box;
+}
+.label-select-radio label {
+    width: auto !important;
+    float: left;
+    margin-right: 30px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    line-height: 1 !important;
+    height: auto !important;
+}
+.item-pro-cart {
+    width: 100%;
+    float: left;
+    margin-bottom: 10px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+}
+.p-n-img {
+    width: 80px;
+    float: left;
+    margin-right: 10px;
+}
+img {
+    max-width: 100%;
+    height: 100%;
+}
+.p-n-info {
+    width: calc(100% - 220px);
+    float: left;
+}
+.p-n-quan {
+    width: 100%;
+    float: left;
+    font-size: 14px;
+    font-weight: 500;
+}
+.p-n-price {
+    width: 150px;
+    float: right;
+    text-align: right;
+    font-size: 16px;
+    font-weight: 500;
+}
+.p-n-name {
+    width: 100%;
+    float: left;
+    margin-bottom: 5px;
+    font-size: 14px;
+    text-decoration: none;
+    color: #000;
+}
+.benphai{
+    width: calc(35% - 10px);
+    float: right;
+    background-color: white;
+}
+.box-b3-product {
+    width: 100%;
+    float: left;
+    border-radius: 6px;
+    border: 1px solid #e1e1e1;
+    box-sizing: border-box;
+}
+.box-b3-product-header {
+    width: 100%;
+    float: left;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+.box-b3-product-header a {
+    float: left;
+    padding: 0 15px;
+    line-height: 30px;
+    font-size: 14px;
+    border-radius: 5px;
+    border: 1px solid #e1e1e1;
+    background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#ebeceb));
+    background: linear-gradient(180deg, #fff, #ebeceb);
+}
+.title-n-b3-p {
+    width: 100%;
+    float: left;
+    padding: 0 10px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+.title-n-b3-p a {
+    color: #4281f8;
+    font-size: 14px;
+    text-decoration: none;
+}.fas {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1;
+}
+.fa-sort-down:before {
+    content: "\f0dd";
+}
+.list-b3-p {
+    width: 100%;
+    float: left;
+    padding: 0 10px;
+    display: none;
+}
+.item-n {
+    width: 100%;
+    float: left;
+    padding: 10px 0;
+    border-bottom: solid 1px #e1e1e1;
+    display: flex
+;
+}
+.list-b3-p-quan {
+    width: 20px;
+    float: left;
+    font-size: 12px;
+    margin-right: 10px;
+}
+.list-b3-p-name {
+    width: calc(100% - 115px);
+    float: left;
+    font-size: 14px;
+    color: #333;
+    padding-right: 10px;
+    word-break: break-all;
+    text-decoration: none;
+}
+.list-b3-p-price {
+    width: 85px;
+    float: right;
+    text-align: right;
+    font-size: 12px;
+}
+.cart-b3-total-price {
+    width: 100%;
+    float: left;
+    padding: 10px 10px 5px;
+    border-top: solid 1px #e1e1e1;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 700;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+.cart-b3-total-price b {
+    font-size: 16px;
+    color: #ee2724;
+}
+.cart-b3-vat {
+    width: 100%;
+    float: left;
+    padding: 0 10px 10px;
+    font-size: 14px;
+    font-weight: 300;
+    font-style: italic;
+    text-align: right;
+    box-sizing: border-box;
+}
+.title-c-ct {
+    width: 100%;
+    float: left;
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: 700;
+    color: #000;
+}
+.box-cart-pay-method {
+    width: 100%;
+    float: left;
+    margin-bottom: 20px;
+    border: 1px solid #e1e1e1;
+    padding: 10px;
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+.item-tk-ct {
+    width: 100%;
+    float: left;
+    margin-bottom: 10px;
+}
+.label-select-radio label {
+    width: auto !important;
+    float: left;
+    margin-right: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex
+;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    position: relative;
+    line-height: 1 !important;
+    height: auto !important;
+}
+.radiobtn {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 18px;
+    width: 18px;
+    background-color: #fff;
+    border-radius: 50%;
+    z-index: 1;
+    border: 2px solid #e1e1e1;
+}
+.label-select-radio label input {
+    opacity: 0;
+    z-index: 2;
+    height: 18px;
+    width: 18px;
+    border-radius: 50%;
+    float: left;
+    position: relative;
+    top: 0;
+    left: 0;
+    margin: 0 8px 0 0;
+}
+.box-cart-bill {
+    width: 100%;
+    float: left;
+    margin-bottom: 10px;
+}
+.vietqr-image-container {
+    display: flex
+;
+    width: 100%;
+    margin: 30px 0 20px;
+}
+.vietqr-image {
+    max-width: 200px;
+    margin: auto;
+}
+/* img {
+    max-width: 100%;
+    height: auto;
+} */
+element.style {
+    width: 304px;
+    height: 78px;
+}
+@media (min-width: 1650px) {
+    .g-recaptcha iframe {
+        width: 404px !important;
+    }
+}
+.g-recaptcha iframe {
+    height: 94px !important;
+}
+@media (min-width: 1650px) {
+    div iframe {
+        height: 635px !important;
+        width: 452px !important;
+    }
+}
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+/* iframe[Attributes Style] {
+    width: 304px;
+    height: 78px;
+    border-top-width: 0px;
+    border-bottom-width: 0px;
+    border-left-width: 0px;
+    border-right-width: 0px;
+} */
+user agent stylesheet
+iframe {
+    overflow-clip-margin: content-box !important;
+    overflow: clip !important;
+    border-width: 2px;
+    border-style: inset;
+    border-color: initial;
+    border-image: initial;
+}
+.checkbox {
+    width: 100%;
+    float: left;
+    margin-bottom: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-top: 10px
+;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+#chkTaxInvoice {
+    width: 18px;
+    height: 18px;
+    float: left;
+    margin-right: 10px;
+}
+
+.tax-cart-ct {
+    width: 100%;
+    float: left;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.item-tk {
+    width: 100%;
+    float: left;
+    margin-bottom: 4px;
+    display: flex;
+}
+.item-tk label {
+    width: 23%;
+    float: left;
+    font-size: 14px;
+    line-height: 1.5;
+    display: flex;
+    height: 40px;
+    align-items: center;
+}
+.item-tk-ct {
+    width: calc(100% - 96px);
+}
+.rc-anchor-pt {
+    margin: 2px 11px 0 0;
+    padding-right: 2px;
+    position: absolute;
+    right: 0;
+    text-align: right;
+    width: 276px;
+}
+.rc-anchor-error-msg-container {
+    color: #f00;
+    font-family: Roboto, helvetica, arial, sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    left: 0;
+    line-height: 14px;
+    margin: 2px;
+    position: absolute;
+    top: 0;
+}.rc-anchor-content {
+    height: 74px;
+    width: 206px;
+}
+
+.rc-inline-block {
+    display: inline-block;
+    height: 100%;
+}
+.rc-inline-block {
+    display: inline-block;
+    height: 100%;
+}
+.rc-anchor-center-container {
+    display: table;
+    height: 100%;
+}
+.recaptcha-checkbox {
+    border: none;
+    font-size: 1px;
+    height: 28px;
+    margin: 4px;
+    width: 28px;
+    overflow: visible;
+    outline: 0;
+    vertical-align: text-bottom;
+}.rc-anchor-checkbox-label {
+    font-family: Roboto, helvetica, arial, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+}
+.rc-anchor-normal-footer {
+    display: inline-block;
+    height: 74px;
+    vertical-align: top;
+    width: 70px;
+}
+.rc-anchor-logo-portrait {
+    margin: 10px 0 0 26px;
+    width: 58px;
+}.rc-anchor-logo-img-portrait {
+    -webkit-background-size: 32px;
+    -o-background-size: 32px;
+    background-size: 32px;
+    height: 32px;
+    margin: 0 13px 0 13px;
+    width: 32px;
+}
+.list-button-cart {
+    width: 100%;
+    clear: both;
+    float: left;
+}
+.new-cart-button {
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    padding-bottom: 150px;
+}
+.button {
+    line-height: 44px;
+    height: 44px;
+    color: #fff;
+    margin-top: 5px;
+    text-transform: uppercase;
+    font-weight: 700;
+    border: 0;
+    border-radius: 3px;
+    font-size: 15px;
+    width: 100%;
+}
+.radiobtn::after {
+    content: '';
+    top: 3px;
+    left: 3px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #fff;
+    display: block;
+    position: relative;
+}
+.radiobtn {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 18px;
+    width: 18px;
+    background-color: #fff;
+    border-radius: 50%;
+    z-index: 1;
+    border: 2px solid #e1e1e1;
+}.check-radio:checked~.radiobtn {
+    background: #233b76;
+    border: 2px solid #233b76;
+}
+.list-b3-p {
+    width: 100%;
+    float: left;
+    padding: 0 10px;
+    display: none;
+}
+.item-n {
+    width: 100%;
+    float: left;
+    padding: 10px 0;
+    border-bottom: solid 1px #e1e1e1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex
+;
+}
+.list-b3-p-quan {
+    width: 20px;
+    float: left;
+    font-size: 12px;
+    margin-right: 10px;
+}
+.list-b3-p-name {
+    width: calc(100% - 115px);
+    float: left;
+    font-size: 12px;
+    color: #333;
+    padding-right: 10px;
+    word-break: break-all;
+}
+.list-b3-p-price {
+    width: 85px;
+    float: right;
+    text-align: right;
+    font-size: 12px;
+}
+#ajxTaxInvoice {
+    width: 100%;
+    float: left;
+    margin-bottom: 10px;
+    border: 1px solid #e1e1e1;
+    border-radius: 6px;
+    display: none;
+}
+#ajxTaxInvoice.active {
+    display: block;
+}
+#js-list-b3-p{
+    display: none;
+}
+#js-list-b3-p.active{
+    display: block;
+}
