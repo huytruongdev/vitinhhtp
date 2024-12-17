@@ -108,37 +108,65 @@ a {
   color: white; 
 }
 
-
+// _________________________Hover_Menu_____________________________->
 .popup-content {
   position: absolute;
   left:100%;
   top: 0; 
   transform: translateY(0%); 
-  width: 900px;
-  background-color: #f0f0f0;
-  border: 1px solid #ccc;
+  width: 1200px;
+  background-color:white;
   padding: 10px;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-  visibility: hidden; 
+  visibility: visible; 
   z-index: 2;
 }
 .li-catcha-menu:hover .popup-content {
   visibility: visible;
 }
-
-.popup-container{
+.popup-container {
   display: flex;
-  flex-wrap: wrap; 
-  width: 100%;    
-  border: 1px solid #ccc;
-}
-.popup-container-item{
-  width:100%;
+  flex-wrap: wrap;
+  width: 100%;
 }
 
+.popup-container-item {
+  flex: 1 1 200px; 
+  min-width: 190px;
+  box-sizing: border-box;
+  padding: 10px;
+}
+.popup-box-title {
+  display: block;
+  margin-bottom: 10px; 
+  font-size: 15px;
+  font-weight: 600; 
+  color: red;
+}
 
+.popup-container-item span {
+  margin-left: 0; 
+}
 
+.popup-container-item p {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; 
+  margin-bottom: 10px 0;
+  padding-bottom: 1px; 
+  border-bottom: 1px solid transparent; 
+  transition: border-bottom 0.3s, color 0.3s; 
+}
 
+.popup-container-item p:hover {
+  border-bottom: 1px solid red;
+}
+
+.popup-container-item p:hover a,
+.popup-container-item p:hover i {
+  color: red;
+}
+// _________________________Hover_Menu_____________________________<-
 
 
 .owl-stage-outer{

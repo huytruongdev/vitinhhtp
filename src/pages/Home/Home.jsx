@@ -74,34 +74,171 @@ const Home = () => {
                         Laptop Theo Nhu Câu
                       </span>
                       <p>
-                        <a href="">Latop Acer</a>
+                        <a href="">Phổ Thông, Văn Phòng</a>
                         <i className="fa-solid fa-angle-right"></i>
                       </p>
                       <p>
-                        <a href="">Latop Acer</a>
+                        <a href="">Mỏng Nhẹ Cao Cấp</a>
                         <i className="fa-solid fa-angle-right"></i>
                       </p>
                       <p>
-                        <a href="">Latop Acer</a>
+                        <a href="">Laptop Doanh Nhân</a>
                         <i className="fa-solid fa-angle-right"></i>
                       </p>
                       <p>
-                        <a href="">Latop Acer</a>
+                        <a href="">Latop Cảm Ứng</a>
                         <i className="fa-solid fa-angle-right"></i>
                       </p>
                       <p>
-                        <a href="">Latop Acer</a>
+                        <a href="">Lapto Doanh Nghiệp</a>
+                        <i className="fa-solid fa-angle-right"></i>
+                      </p>      
+                    </div>
+                    <div className="popup-container-item">
+                      <span className="popup-box-title">
+                        Laptop Theo Khoảng Giá
+                      </span>
+                      <p>
+                        <a href="">Dưới 10 Triệu</a>
                         <i className="fa-solid fa-angle-right"></i>
                       </p>
                       <p>
-                        <a href="">Latop Acer</a>
+                        <a href="">10 Triệu - 15 Triệu</a>
                         <i className="fa-solid fa-angle-right"></i>
                       </p>
                       <p>
-                        <a href="">Latop Acer</a>
+                        <a href="">15 Triệu - 20 Triệu</a>
                         <i className="fa-solid fa-angle-right"></i>
                       </p>
-                      
+                      <p>
+                        <a href="">20 Triệu - 25 Triệur</a>
+                        <i className="fa-solid fa-angle-right"></i>
+                      </p>
+                      <p>
+                        <a href="">25 Triệu - 30 Triệu</a>
+                        <i className="fa-solid fa-angle-right"></i>
+                      </p>
+                      <p>
+                        <a href="">35 Triệu - 40 Triệu</a>
+                        <i className="fa-solid fa-angle-right"></i>
+                      </p>
+                      <p>
+                        <a href="">40 Triệu - 45 Triệu</a>
+                        <i className="fa-solid fa-angle-right"></i>
+                      </p>
+                      <p>
+                        <a href="">Trên 50 Triệu</a>
+                        <i className="fa-solid fa-angle-right"></i>
+                      </p>
+                    </div>
+                    <div className="popup-container-item">
+                      <span className="popup-box-title">
+                        Laptop Theo Cấu Hình
+                      </span>
+                      <p>
+                        <a href="">CPU</a>
+                        <i className="fa-solid fa-angle-right"></i>
+                      </p>
+                      <p>
+                        <a href="">VGA</a>
+                        <i className="fa-solid fa-angle-right"></i>
+                      </p>
+                      <p>
+                        <a href="">RAM</a>
+                        <i className="fa-solid fa-angle-right"></i>
+                      </p>
+                      <p>
+                        <a href="">Kích Thước Màn Hình</a>
+                        <i className="fa-solid fa-angle-right"></i>
+                      </p>
+                      <p>
+                        <a href="">Độ Phân Giải Màn Hình</a>
+                        <i className="fa-solid fa-angle-right"></i>
+                      </p>
+                      <p>
+                        <a href="">Tần Số Quét Màn Hình</a>
+                        <i className="fa-solid fa-angle-right"></i>
+                      </p>
+                      <p>
+                        <a href="">Cảm Ứng Màn Hình</a>
+                        <i className="fa-solid fa-angle-right"></i>
+                      </p>
+                      <p>
+                        <a href="">Tùy Chọn Cảm Ứng</a>
+                        <i className="fa-solid fa-angle-right"></i>
+                      </p>
+                      <p>
+                        <a href="">Hệ Điều Hành</a>
+                        <i className="fa-solid fa-angle-right"></i>
+                      </p>
+                    </div>
+                    <div className="popup-container-item">
+                      <span className="popup-box-title">
+                        Máy Tính Bảng
+                      </span>
+                      <p>
+                        <a href="">Máy Tính Bảng Apple</a>
+                        <i className="fa-solid fa-angle-right"></i>
+                      </p>
+                      <p>
+                        <a href="">Máy Tính Bảng Xiaomi</a>
+                        <i className="fa-solid fa-angle-right"></i>
+                      </p>
+                    </div>
+                    <div className="popup-container-item">
+                      <span className="popup-box-title">
+                        Phụ Kiện LapTop
+                      </span>
+                      <p>
+                        <a href="">Ba Lô, Cặp, TúiTúi</a>
+                        <i className="fa-solid fa-angle-right"></i>
+                      </p>
+                      <p>
+                        <a href="">Đế Tản Nhiệt Laptop</a>
+                        <i className="fa-solid fa-angle-right"></i>
+                      </p>
+                      <p>
+                        <a href="">Bàn Laptop / Giá Đỡ Laptop</a>
+                        <i className="fa-solid fa-angle-right"></i>
+                      </p>
+                      <p>
+                        <a href="">Sạc Laptop</a>
+                        <i className="fa-solid fa-angle-right"></i>
+                      </p>
+                      <p>
+                        <a href="">Bộ Vệ Sinh, Phụ Kiện Khác</a>
+                        <i className="fa-solid fa-angle-right"></i>
+                      </p>
+                    </div>
+                    <div className="popup-container-item">
+                      <span className="popup-box-title">
+                        Linh Kiện Laptop
+                      </span>
+                      <p>
+                        <a href="">RAM Laptop</a>
+                        <i className="fa-solid fa-angle-right"></i>
+                      </p>
+                      <p>
+                        <a href="">Ổ Cứng Laptop</a>
+                        <i className="fa-solid fa-angle-right"></i>
+                      </p>
+                      <p>
+                        <a href="">Khay Đặt HDD/SSD - Caddy Bay</a>
+                        <i className="fa-solid fa-angle-right"></i>
+                      </p>
+                    </div>
+                    <div className="popup-container-item">
+                      <span className="popup-box-title">
+                        Máy Đọc Sách
+                      </span>
+                      <p>
+                        <a href="">Bộ Mở Rộng Mành Hình Laptop</a>
+                        <i className="fa-solid fa-angle-right"></i>
+                      </p>
+                      <p>
+                        <a href="">Bộ 2 Màn Hình 11 đến 15 inch Laptop</a>
+                        <i className="fa-solid fa-angle-right"></i>
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -114,9 +251,6 @@ const Home = () => {
                   </a>
                 </div>
                 <i className="fa-solid fa-angle-right"></i>
-                <div className="popup-content">
-                  Chi tiết sản phẩm: Laptop, Macbook, Surface
-                </div>
               </li>
               <li className="li-catcha-menu">
                 <div className="nav-menu">
