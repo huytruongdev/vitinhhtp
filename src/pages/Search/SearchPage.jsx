@@ -84,15 +84,17 @@ const SearchPage = () => {
                                 <KeyboardDoubleArrowRightSharpIcon style={{ fontSize: 'small'}} />
                                 Case - Vỏ máy tính - (1)
                                 </Nav.Link>
-                                <Nav.Link eventKey="link-1"style={{
+                                <Nav.Link href="#" eventKey="link-1"style={{
+                                    // line-height:'2',
+                                    // padding-left:'10px',
                                     color:'#212529',
                                     fontsize: '12px',
                                     
-                                }}>
+                                }} className="custom-link">
                                     <KeyboardDoubleArrowRightSharpIcon style={{ fontSize: 'small'}} />
                                     Gian Hàng Thanh Lý - (2)
                                 </Nav.Link>
-                                <Nav.Link eventKey="link-2" style={{
+                                <Nav.Link href="#" eventKey="link-2" style={{
                                     color:'#212529',
                                     fontsize: '12px',
                                     
@@ -104,15 +106,15 @@ const SearchPage = () => {
                                     color:'#212529',
                                     fontsize: '12px',
                                     
-                                }}>
+                                }} className="custom-link">
                                     <KeyboardDoubleArrowRightSharpIcon style={{ fontSize: 'small'}} />
                                     Thiết Bị Chơi Game Cũ - (1)
                                 </Nav.Link>
-                                <Nav.Link eventKey="link-4" style={{
+                                <Nav.Link href="#" eventKey="link-4" style={{
                                     color:'#212529',
                                     fontsize: '12px',
                                     
-                                }}>
+                                }} className="custom-link">
                                     <KeyboardDoubleArrowRightSharpIcon style={{ fontSize: 'small'}} />
                                     Máy Chơi Game, Tay Game Cũ - (1)
                                 </Nav.Link>
@@ -122,39 +124,49 @@ const SearchPage = () => {
                     </div>
 
                     <div className='p-filter-item'>
-                         <span className='filter-title'> HÃNG SẢN XUẤT </span>
-                         <div className='filter-rulers'></div>
+                        <span className='filter-title'> HÃNG SẢN XUẤT </span>
+                        <div className='filter-rulers'></div>
                         <div className='p-filter-list-value'>
+                        <div className="list-brand-check">
                         <Form>
                             {[''].map((type) => (
                             <div key={`default-${type}`} className="mb-3">
                             <Form.Check // prettier-ignore
+                            className='form-check'
                             type={'checkbox'}
                             id={`default-${type}`}
                             label={`ASUS ${type}`}/>
 
                             <Form.Check
-                                
+                                className='form-check'
                                 type={'checkbox'}
                                 label={`LOGITECH ${type}`}
                                 id={`default-${type}`}/>
                             <Form.Check
+                                className='form-check'
                                 type={'checkbox'}
                                 label={`TP-LINK ${type}`}
                                 id={`default-${type}`}/>
                             <Form.Check                          
+                                className='form-check'                    
                                 type={'checkbox'}
                                 label={`DAREU ${type}`}
                                 id={`default-${type}`}/> 
 
 
-                            <Form.Check                
+                            <Form.Check
+                                className='form-check'                
                                 type={'checkbox'}
                                 label={`AKKO ${type}`}
                                 id={`default-${type}`}/>                                                               
                             </div>
                         ))}
                         </Form>
+
+
+                        </div>
+                        
+                        
                         </div>
                     </div>
 
