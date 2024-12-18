@@ -21,6 +21,9 @@ const App = () => {
           <li>
             <Link to="/search-page">Search Page</Link>
           </li>
+          <li>
+            <Link to="/test">Test</Link>
+          </li>
         </ul>
       </nav>
       <main>

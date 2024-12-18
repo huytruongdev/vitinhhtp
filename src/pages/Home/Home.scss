@@ -306,9 +306,9 @@ a {
   color: #fff;
 }
 .slider-product-one-content-items {
-  display: flex;
-  padding-top: 5px;
-  justify-content: space-between;
+  // display: flex;
+  // padding-top: 5px;
+  // justify-content: space-between;
 }
 .p-component {
   background-color: white;
@@ -349,6 +349,7 @@ a {
   position: relative;
   font-size: var(--text-color);
   background: #f2f2f2;
+  text-transform: uppercase;
 }
 .p-component .p-info .p-name {
   display: block;
@@ -432,10 +433,10 @@ a {
   padding: 5px;
   align-items: center;
 }
-.slider-product-one-content-container {
-  position: relative;
-  margin: 0 10px 0px;
-}
+// .slider-product-one-content-container {
+//   position: relative;
+//   margin: 0 10px 0px;
+// }
 .slider-product-one-btn {
   position: absolute;
   top: 50%;
