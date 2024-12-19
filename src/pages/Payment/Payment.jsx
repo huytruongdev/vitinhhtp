@@ -1,6 +1,11 @@
 import React, { useState } from 'react';
 import './Payment.scss';
 
+const HandleSubmit = (e) => {
+  e.preventDefault(); // Ngừng hành động mặc định của form nếu có
+  alert("Đặt hàng thành công!");
+};
+
 const Payment = () => {
   // States for checkbox and selected payment method
   const [isTaxInvoiceVisible, setTaxInvoiceVisible] = useState(false);
@@ -37,6 +42,8 @@ const Payment = () => {
   // Function to toggle product details visibility
   const viewMoreProductCart = () => {
     setProductDetailsVisible(!isProductDetailsVisible);
+
+    
   };
 
   return (
@@ -47,7 +54,7 @@ const Payment = () => {
             <div className="bt2">
               <div className="bt3">
                 <a href="/" className="bt31">
-                  <img src="/trans_bg.webp" alt="hanoicomputer" />
+                  <img src="/assets/trans_bg.png" alt="hanoicomputer" />
                 </a>
                 <div className="bt32">
                   <div className="bt321">
@@ -159,7 +166,7 @@ const Payment = () => {
                   <div className="box-b3-product">
                     <div className="box-b3-product-header">
                       <span>Đơn hàng</span>
-                      <a href="javascript:;" onClick={() => alert('Sửa')}>Sửa</a>
+                      <a href="/cart" onClick={() => alert('Quay về trang giỏ hàng')}>Sửa</a>
                     </div>
                     <div className="box-b3-product-list">
                       <div className="title-n-b3-p">
@@ -261,12 +268,27 @@ const Payment = () => {
                       placeholder="Ghi chú"
                       style={{ height: '60px', width: '100%', marginBottom: '10px', padding: '5px 10px', border: 'solid 1px #ccc', borderRadius: '5px' }}
                     />
+
                     <div className="list-button-cart">
                       <div className="new-cart-button">
-                        <button type="submit" className="button" style={{ backgroundColor: 'red' }}>Đặt hàng</button>
+                        <button type="submit" className="button" style={{ backgroundColor: 'red' }} onClick={HandleSubmit}>Đặt hàng</button>
                         <button className="button" href="/" style={{ backgroundColor: 'blue' }}>Mua trả góp</button>
-                        <button className="button" href="/" style={{ backgroundColor: '#fea23b' }}>Chọn thêm sản phẩm</button>
-                        <button className="button" href="/" style={{ backgroundColor: '#243a76' }}>Quay lại giỏ hàng</button>
+                        <a href="/home" className="button-link">
+                          <button
+                            className="button"
+                            style={{ backgroundColor: '#fea23b' }}
+                          >
+                            Chọn thêm sản phẩm
+                          </button>
+                        </a>
+                        <a href="/cart" className="button-link">
+                          <button
+                            className="button"
+                            style={{ backgroundColor: '#243a76' }}
+                            >
+                            Quay lại giỏ hàng
+                          </button>
+                        </a>
                       </div>
                     </div>
                   </div>

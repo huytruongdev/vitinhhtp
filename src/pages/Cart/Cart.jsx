@@ -159,13 +159,13 @@ const Cart = () => {
                         <div className="breadcrumb mb-0 p-0">
                             <ul className="list-unstyled m-0">
                                 <li>
-                                    <a href="/" itemprop="item">
+                                    <a href="/home" itemprop="item">
                                         <span itemprop="name">Home</span>
                                     </a>
                                     <meta itemprop="position" content="1" />
                                 </li>
                                 <li itemprop="itemListElement">
-                                    <a href="/" itemprop="item">
+                                    <a href="/cart" itemprop="item">
                                         <span>
                                             <span itemprop="name" className="">Cart</span>
                                         </span>
@@ -288,7 +288,9 @@ const Cart = () => {
                                     </p>
                                     <span className="cart-vat">(Đã bao gồm VAT nếu có)</span>
                                 </div>
-                                <button className="button-buy-submit-cart" >Xác Nhận Thanh Toán</button>
+                                <a href="/payment" className="button-buy-submit-cart">
+                                    Xác Nhận Thanh Toán
+                                </a>
                             </div>
                         </div>
                     </div>
