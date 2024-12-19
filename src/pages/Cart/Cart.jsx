@@ -4,12 +4,11 @@ import './Cart.scss';
 const Cart = () => {
     // Dữ liệu giỏ hàng (sản phẩm, giá, số lượng)
     const [cartItems, setCartItems] = useState([
-        { id: 1, name: 'HACOM APOLLO i14-Black Myth Wukong (GeForce RTX 4070Ti Super /i7 14700K/Z790/32G RAM/1000W)', price: 77989000, quantity: 1, image: 'https://hanoicomputercdn.com/media/product/250_83037_hacom_apollo_i14_i7_14700k_z790_32g_ram_rtx_4070ti_super_1000wx.jpg' },
-        { id: 2, name: 'HACOM APOLLO i14-Black Myth Wukong (GeForce RTX 4070Ti Super /i7 14700K/Z790/32G RAM/1000W)', price: 77989000, quantity: 1, image: 'https://hanoicomputercdn.com/media/product/250_83037_hacom_apollo_i14_i7_14700k_z790_32g_ram_rtx_4070ti_super_1000wx.jpg' },
-        { id: 3, name: 'HACOM APOLLO i14-Black Myth Wukong (GeForce RTX 4070Ti Super /i7 14700K/Z790/32G RAM/1000W)', price: 77989000, quantity: 1, image: 'https://hanoicomputercdn.com/media/product/250_83037_hacom_apollo_i14_i7_14700k_z790_32g_ram_rtx_4070ti_super_1000wx.jpg' },
-        { id: 4, name: 'HACOM APOLLO i14-Black Myth Wukong (GeForce RTX 4070Ti Super /i7 14700K/Z790/32G RAM/1000W)', price: 77989000, quantity: 1, image: 'https://hanoicomputercdn.com/media/product/250_83037_hacom_apollo_i14_i7_14700k_z790_32g_ram_rtx_4070ti_super_1000wx.jpg' },
-        { id: 5, name: 'HACOM APOLLO i14-Black Myth Wukong (GeForce RTX 4070Ti Super /i7 14700K/Z790/32G RAM/1000W)', price: 77989000, quantity: 1, image: 'https://hanoicomputercdn.com/media/product/250_83037_hacom_apollo_i14_i7_14700k_z790_32g_ram_rtx_4070ti_super_1000wx.jpg' },
-        { id: 6, name: 'HACOM APOLLO i14-Black Myth Wukong (GeForce RTX 4070Ti Super /i7 14700K/Z790/32G RAM/1000W)', price: 77989000, quantity: 1, image: 'https://hanoicomputercdn.com/media/product/250_83037_hacom_apollo_i14_i7_14700k_z790_32g_ram_rtx_4070ti_super_1000wx.jpg' }
+        { id: 1,masp: 'PCGM845', name: 'HACOM APOLLO i14-Black Myth Wukong (GeForce RTX 4070Ti Super /i7 14700K/Z790/32G RAM/1000W)', price: 77989000, quantity: 1, image: 'https://hanoicomputercdn.com/media/product/250_83037_hacom_apollo_i14_i7_14700k_z790_32g_ram_rtx_4070ti_super_1000wx.jpg' },
+        { id: 2,masp: 'CSA5017', name: 'Vỏ Case Asus ROG Hyperion GR701  (Full Tower / Màu Đen )', price: 18909000, quantity: 2, image: 'https://hanoicomputercdn.com/media/product/250_70769_gr701__12_.jpg' },
+        { id: 3,masp: 'MOLG253',name: 'Màn hình LG 24MR400-B (23.8 inch/FHD/IPS/100Hz/5ms', price: 2179000, quantity: 4, image: 'https://hanoicomputercdn.com/media/product/250_77685_man_hinh_lg_24mr400_b_850x850_2.jpg' },
+        { id: 4,masp: 'PCHA009',name: 'PC HACOM PROJECT ZERO WHITE ( Intel i5 14400F/ VGA RTX 4070 )', price: 39999000, quantity: 2, image: 'https://hanoicomputercdn.com/media/product/250_87631_pc_hacom_project_zero_white_intel_i5_14400f_vga_rtx_4070xx.jpg' },
+        { id: 5,masp: 'GPAS001',name: 'Tay cầm chơi game không dây Asus ROG Raikiri Pro', price: 3399000, quantity: 6, image: 'https://hanoicomputercdn.com/media/product/250_85807_rog_raikiri_pro_01.jpg' },
         // Thêm các sản phẩm khác ở đây
     ]);
     // Thay đổi trạng thái khi checkbox được chọn
@@ -17,7 +16,7 @@ const Cart = () => {
         const updatedSelectedItems = new Set(selectedItems);
         if (updatedSelectedItems.has(id)) {
             updatedSelectedItems.delete(id);
-        } else {
+        } else { 
             updatedSelectedItems.add(id);
         }
         setSelectedItems(updatedSelectedItems);
@@ -213,7 +212,7 @@ const Cart = () => {
                                                         {item.name}
                                                     </a>
                                                     <span className="cart-n-p-sku">
-                                                        Mã SP: <b>PCGM845</b>
+                                                        Mã SP: <b>{item.masp}</b>
                                                     </span>
                                                 </div>
                                             </div>
