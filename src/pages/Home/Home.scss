@@ -243,10 +243,6 @@ a {
 }
 
 
-
-
-
-
 /* ______________Slide-Product____________________ */
 .slider-product-one  {
   overflow: hidden;
@@ -268,12 +264,13 @@ a {
   align-items: center;
   text-align: center;
 }
-.slider-product-one-content-container .slick-slide{
-  // margin: 0 8px;
+.slider-product-one-content-container .slick-slide > div{
+  margin: 0 5px;
+  
 }
 .slider-product-one-content-container .slick-list{
   height: 619px;
-  // margin: 0 -8px;
+  margin: 0 -5px;
 }
 .h-title-main {
   color: #333e48;
