@@ -68,7 +68,7 @@ const SearchPage = () => {
                 <div className='cate-left'>
                     <div className='title'>
                     <div className='btn-title'>
-                        <span className='s-title'>LỌC SẢN PHẨM</span>
+                        <span className='s-title'>LỌC SẢN PHẨM fssfd</span>
                     </div>
                     </div>
                     <div className='p-filter-item'>
