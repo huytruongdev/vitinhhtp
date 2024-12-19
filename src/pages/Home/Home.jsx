@@ -6,11 +6,22 @@ const Home = () => {
     infinite: true,
     slidesToShow: 1,
     slidesToScroll: 1,
-    arrows: false,
+    arrows: true,
     autoplay: true,
     speed: 1000,
     autoplaySpeed: 1500,
   };
+  const multislider = {
+    dots: false,
+    infinite: true,
+    slidesToShow: 6,
+    slidesToScroll: 1,
+    arrows: true,
+    // autoplay: true,
+    // speed: 1000,
+    // autoplaySpeed: 1500,
+  };
+  
   return (
     <section className="home-body">
       <div className="container-main">
@@ -4308,8 +4319,7 @@ const Home = () => {
               </a>
             </div>
             <div className="slider-product-one-content-container">
-              <div className="slider-product-one-content-container-items">
-                <div className="slider-product-one-content-items">
+              <Slider {...multislider}>
                   <div className="slider-product-one-content-item">
                     <div className="p-component">
                       <img src="assets/latop1.jpg" alt="" />
@@ -4738,98 +4748,93 @@ const Home = () => {
                       </div>
                     </div>
                   </div>
-                  {/* <div className="slider-product-one-content-item">
-                  <div className="p-component">
-                    <img src="assets/laptop6.jpg" alt="" />
-                    <div className="slider-product-one-content-item-text">
-                      <div className="review-count">
-                        <li>
-                          <i className="fa-solid fa-star"></i>
-                          <i className="fa-solid fa-star"></i>
-                          <i className="fa-solid fa-star"></i>
-                          <i className="fa-solid fa-star"></i>
-                          <i className="fa-solid fa-star"></i>
-                          <span className="p-count-rate">(0)</span>
-                        </li>
-                        <p className="p-sku">MÃ: LAHP249</p>
-                      </div>
-                      <div className="p-info">
-                        <p className="p-name">
-                          <a href="">
-                            Laptop HP Pavilion X360 14-ek2017TU (9Z2V5PA) (Core
-                            5 120U/16GB RAM/512GB SSD/14 FHD Cảm
-                            ứng/Bút/Win11/Bạc)
-                          </a>
-                        </p>
-                        <span className="p-mprice">24.899.000</span>
-                        <span className="p-discount">(Tiết kiệm: 10%)</span>
-                        <span className="p-price">22.499.000</span>
-                      </div>
-                      <div className="p-promotion-group">
-                        <div className="p-promotion-holder">
-                          <div className="attr-item">
-                            <span className="text">CPU: Intel Core i5</span>
+                  <div className="slider-product-one-content-item">
+                    <div className="p-component">
+                      <img src="assets/laptop5.jpg" alt="" />
+                      <div className="slider-product-one-content-item-text">
+                        <div className="review-count">
+                          <li>
+                            <i className="fa-solid fa-star"></i>
+                            <i className="fa-solid fa-star"></i>
+                            <i className="fa-solid fa-star"></i>
+                            <i className="fa-solid fa-star"></i>
+                            <i className="fa-solid fa-star"></i>
+                            <span className="p-count-rate">(0)</span>
+                          </li>
+                          <p className="p-sku">MÃ: LAHP249</p>
+                        </div>
+                        <div className="p-info">
+                          <p className="p-name">
+                            <a href="">
+                              Laptop HP Pavilion X360 14-ek2017TU (9Z2V5PA)
+                              (Core 5 120U/16GB RAM/512GB SSD/14 FHD Cảm
+                              ứng/Bút/Win11/Bạc)
+                            </a>
+                          </p>
+                          <span className="p-mprice">24.899.000</span>
+                          <span className="p-discount">(Tiết kiệm: 10%)</span>
+                          <span className="p-price">22.499.000</span>
+                        </div>
+                        <div className="p-promotion-group">
+                          <div className="p-promotion-holder">
+                            <div className="attr-item">
+                              <span className="text">CPU: Intel Core i5</span>
+                            </div>
+                            <div className="attr-item">
+                              <span className="text">RAM: 16 GB</span>
+                            </div>
+                            <div className="attr-item">
+                              <span className="text">SSD: 512 GB</span>
+                            </div>
+                            <div className="attr-item">
+                              <span className="text">Màn hình: 14 inch</span>
+                            </div>
+                            <div className="attr-item">
+                              <span className="text">
+                                VGA: VGA Tích Hợp (Onboard)
+                              </span>
+                            </div>
                           </div>
-                          <div className="attr-item">
-                            <span className="text">RAM: 16 GB</span>
+                          <div className="p-gift-holder">
+                            <div className="p-gift-list">
+                              <div className="item">
+                                <img
+                                  src="./assets/promo1.jpg"
+                                  alt=""
+                                  style={{ width: "28px" }}
+                                />
+                              </div>
+                              <div className="item">
+                                <img
+                                  src="./assets/promofix.png"
+                                  alt=""
+                                  style={{ width: "28px" }}
+                                />
+                              </div>
+                              <div className="item">
+                                <img
+                                  src="./assets/promo2.png"
+                                  alt=""
+                                  style={{ width: "28px" }}
+                                />
+                              </div>
+                            </div>
                           </div>
-                          <div className="attr-item">
-                            <span className="text">SSD: 512 GB</span>
-                          </div>
-                          <div className="attr-item">
-                            <span className="text">Màn hình: 14 inch</span>
-                          </div>
-                          <div className="attr-item">
-                            <span className="text">
-                              VGA: VGA Tích Hợp (Onboard)
+                          <div className="p-action">
+                            <span className="p-qty">
+                              <i className="fa-solid fa-check"></i>
+                              Sẵn hàng
                             </span>
+                            <a href="" className="p-buy">
+                              <i className="fa-solid fa-cart-shopping"></i>
+                            </a>
                           </div>
-                        </div>
-                        <div className="p-gift-holder">
-                          <div className="p-gift-list">
-                            <div className="item">
-                              <img
-                                src="./assets/promo1.jpg"
-                                alt=""
-                                style={{ width: "28px" }}
-                              />
-                            </div>
-                            <div className="item">
-                              <img
-                                src="./assets/promofix.png"
-                                alt=""
-                                style={{ width: "28px" }}
-                              />
-                            </div>
-                            <div className="item">
-                              <img
-                                src="./assets/promo2.png"
-                                alt=""
-                                style={{ width: "28px" }}
-                              />
-                            </div>
-                          </div>
-                        </div>
-                        <div className="p-action">
-                          <span className="p-qty">
-                            <i className="fa-solid fa-check"></i>
-                            Sẵn hàng
-                          </span>
-                          <a href="" className="p-buy">
-                            <i className="fa-solid fa-cart-shopping"></i>
-                          </a>
                         </div>
                       </div>
                     </div>
                   </div>
-                </div> */}
-                </div>
-              </div>
-              <div className="slider-product-one-btn">
-                <i className="fa-solid fa-angle-left fa-chevron-left"></i>
-                <i className="fa-solid fa-angle-right fa-chevron-right"></i>
-              </div>
-            </div>
+              </Slider>
+            </div>  
           </div>
           {/* <div className="slider-product-one-content">
           <div className="slider-product-one-content-title">
@@ -9803,522 +9808,5 @@ const Home = () => {
 };
 
 export default Home;
-{
-  /* <div className="slider-container">
-              <Slider {...settings}>
-                  <div className="slider-product-one-content-item">
-                    <div className="p-component">
-                      <img src="assets/latop1.jpg" alt="" />
-                      <div className="slider-product-one-content-item-text">
-                        <div className="review-count">
-                          <li>
-                            <i className="fa-solid fa-star"></i>
-                            <i className="fa-solid fa-star"></i>
-                            <i className="fa-solid fa-star"></i>
-                            <i className="fa-solid fa-star"></i>
-                            <i className="fa-solid fa-star"></i>
-                            <span className="p-count-rate">(0)</span>
-                          </li>
-                          <p className="p-sku">MÃ: LAHP249</p>
-                        </div>
-                        <div className="p-info">
-                          <p className="p-name">
-                            <a href="">
-                              Laptop HP Pavilion X360 14-ek2017TU (9Z2V5PA)
-                              (Core 5 120U/16GB RAM/512GB SSD/14 FHD Cảm
-                              ứng/Bút/Win11/Bạc)
-                            </a>
-                          </p>
-                          <span className="p-mprice">24.899.000</span>
-                          <span className="p-discount">(Tiết kiệm: 10%)</span>
-                          <span className="p-price">22.499.000</span>
-                        </div>
-                        <div className="p-promotion-group">
-                          <div className="p-promotion-holder">
-                            <div className="attr-item">
-                              <span className="text">CPU: Intel Core i5</span>
-                            </div>
-                            <div className="attr-item">
-                              <span className="text">RAM: 16 GB</span>
-                            </div>
-                            <div className="attr-item">
-                              <span className="text">SSD: 512 GB</span>
-                            </div>
-                            <div className="attr-item">
-                              <span className="text">Màn hình: 14 inch</span>
-                            </div>
-                            <div className="attr-item">
-                              <span className="text">
-                                VGA: VGA Tích Hợp (Onboard)
-                              </span>
-                            </div>
-                          </div>
 
-                          <div className="p-gift-holder">
-                            <div className="p-gift-list">
-                              <div className="item">
-                                <img
-                                  src="./assets/promo1.jpg"
-                                  alt=""
-                                  style={{ width: "28px" }}
-                                />
-                              </div>
-                              <div className="item">
-                                <img
-                                  src="./assets/promofix.png"
-                                  alt=""
-                                  style={{ width: "28px" }}
-                                />
-                              </div>
-                              <div className="item">
-                                <img
-                                  src="./assets/promo2.png"
-                                  alt=""
-                                  style={{ width: "28px" }}
-                                />
-                              </div>
-                            </div>
-                          </div>
 
-                          <div className="p-action">
-                            <span className="p-qty">
-                              <i className="fa-solid fa-check"></i>
-                              Sẵn hàng
-                            </span>
-                            <a href="" className="p-buy">
-                              <i className="fa-solid fa-cart-shopping"></i>
-                            </a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="slider-product-one-content-item">
-                    <div className="p-component">
-                      <img src="assets/laptop2.jpg" alt="" />
-                      <div className="slider-product-one-content-item-text">
-                        <div className="review-count">
-                          <li>
-                            <i className="fa-solid fa-star"></i>
-                            <i className="fa-solid fa-star"></i>
-                            <i className="fa-solid fa-star"></i>
-                            <i className="fa-solid fa-star"></i>
-                            <i className="fa-solid fa-star"></i>
-                            <span className="p-count-rate">(0)</span>
-                          </li>
-                          <p className="p-sku">MÃ: LAHP249</p>
-                        </div>
-                        <div className="p-info">
-                          <p className="p-name">
-                            <a href="">
-                              Laptop HP Pavilion X360 14-ek2017TU (9Z2V5PA)
-                              (Core 5 120U/16GB RAM/512GB SSD/14 FHD Cảm
-                              ứng/Bút/Win11/Bạc)
-                            </a>
-                          </p>
-                          <span className="p-mprice">24.899.000</span>
-                          <span className="p-discount">(Tiết kiệm: 10%)</span>
-                          <span className="p-price">22.499.000</span>
-                        </div>
-                        <div className="p-promotion-group">
-                          <div className="p-promotion-holder">
-                            <div className="attr-item">
-                              <span className="text">CPU: Intel Core i5</span>
-                            </div>
-                            <div className="attr-item">
-                              <span className="text">RAM: 16 GB</span>
-                            </div>
-                            <div className="attr-item">
-                              <span className="text">SSD: 512 GB</span>
-                            </div>
-                            <div className="attr-item">
-                              <span className="text">Màn hình: 14 inch</span>
-                            </div>
-                            <div className="attr-item">
-                              <span className="text">
-                                VGA: VGA Tích Hợp (Onboard)
-                              </span>
-                            </div>
-                          </div>
-
-                          <div className="p-gift-holder">
-                            <div className="p-gift-list">
-                              <div className="item">
-                                <img
-                                  src="./assets/promo1.jpg"
-                                  alt=""
-                                  style={{ width: "28px" }}
-                                />
-                              </div>
-                              <div className="item">
-                                <img
-                                  src="./assets/promofix.png"
-                                  alt=""
-                                  style={{ width: "28px" }}
-                                />
-                              </div>
-                              <div className="item">
-                                <img
-                                  src="./assets/promo2.png"
-                                  alt=""
-                                  style={{ width: "28px" }}
-                                />
-                              </div>
-                            </div>
-                          </div>
-                          <div className="p-action">
-                            <span className="p-qty">
-                              <i className="fa-solid fa-check"></i>
-                              Sẵn hàng
-                            </span>
-                            <a href="" className="p-buy">
-                              <i className="fa-solid fa-cart-shopping"></i>
-                            </a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="slider-product-one-content-item">
-                    <div className="p-component">
-                      <img src="assets/laptop3.jpg" alt="" />
-                      <div className="slider-product-one-content-item-text">
-                        <div className="review-count">
-                          <li>
-                            <i className="fa-solid fa-star"></i>
-                            <i className="fa-solid fa-star"></i>
-                            <i className="fa-solid fa-star"></i>
-                            <i className="fa-solid fa-star"></i>
-                            <i className="fa-solid fa-star"></i>
-                            <span className="p-count-rate">(0)</span>
-                          </li>
-                          <p className="p-sku">MÃ: LAHP249</p>
-                        </div>
-                        <div className="p-info">
-                          <p className="p-name">
-                            <a href="">
-                              Laptop HP Pavilion X360 14-ek2017TU (9Z2V5PA)
-                              (Core 5 120U/16GB RAM/512GB SSD/14 FHD Cảm
-                              ứng/Bút/Win11/Bạc)
-                            </a>
-                          </p>
-                          <span className="p-mprice">24.899.000</span>
-                          <span className="p-discount">(Tiết kiệm: 10%)</span>
-                          <span className="p-price">22.499.000</span>
-                        </div>
-                        <div className="p-promotion-group">
-                          <div className="p-promotion-holder">
-                            <div className="attr-item">
-                              <span className="text">CPU: Intel Core i5</span>
-                            </div>
-                            <div className="attr-item">
-                              <span className="text">RAM: 16 GB</span>
-                            </div>
-                            <div className="attr-item">
-                              <span className="text">SSD: 512 GB</span>
-                            </div>
-                            <div className="attr-item">
-                              <span className="text">Màn hình: 14 inch</span>
-                            </div>
-                            <div className="attr-item">
-                              <span className="text">
-                                VGA: VGA Tích Hợp (Onboard)
-                              </span>
-                            </div>
-                          </div>
-                          <div className="p-gift-holder">
-                            <div className="p-gift-list">
-                              <div className="item">
-                                <img
-                                  src="./assets/promo1.jpg"
-                                  alt=""
-                                  style={{ width: "28px" }}
-                                />
-                              </div>
-                              <div className="item">
-                                <img
-                                  src="./assets/promofix.png"
-                                  alt=""
-                                  style={{ width: "28px" }}
-                                />
-                              </div>
-                              <div className="item">
-                                <img
-                                  src="./assets/promo2.png"
-                                  alt=""
-                                  style={{ width: "28px" }}
-                                />
-                              </div>
-                            </div>
-                          </div>
-                          <div className="p-action">
-                            <span className="p-qty">
-                              <i className="fa-solid fa-check"></i>
-                              Sẵn hàng
-                            </span>
-                            <a href="" className="p-buy">
-                              <i className="fa-solid fa-cart-shopping"></i>
-                            </a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="slider-product-one-content-item">
-                    <div className="p-component">
-                      <img src="assets/laptop4.jpg" alt="" />
-                      <div className="slider-product-one-content-item-text">
-                        <div className="review-count">
-                          <li>
-                            <i className="fa-solid fa-star"></i>
-                            <i className="fa-solid fa-star"></i>
-                            <i className="fa-solid fa-star"></i>
-                            <i className="fa-solid fa-star"></i>
-                            <i className="fa-solid fa-star"></i>
-                            <span className="p-count-rate">(0)</span>
-                          </li>
-                          <p className="p-sku">MÃ: LAHP249</p>
-                        </div>
-                        <div className="p-info">
-                          <p className="p-name">
-                            <a href="">
-                              Laptop HP Pavilion X360 14-ek2017TU (9Z2V5PA)
-                              (Core 5 120U/16GB RAM/512GB SSD/14 FHD Cảm
-                              ứng/Bút/Win11/Bạc)
-                            </a>
-                          </p>
-                          <span className="p-mprice">24.899.000</span>
-                          <span className="p-discount">(Tiết kiệm: 10%)</span>
-                          <span className="p-price">22.499.000</span>
-                        </div>
-                        <div className="p-promotion-group">
-                          <div className="p-promotion-holder">
-                            <div className="attr-item">
-                              <span className="text">CPU: Intel Core i5</span>
-                            </div>
-                            <div className="attr-item">
-                              <span className="text">RAM: 16 GB</span>
-                            </div>
-                            <div className="attr-item">
-                              <span className="text">SSD: 512 GB</span>
-                            </div>
-                            <div className="attr-item">
-                              <span className="text">Màn hình: 14 inch</span>
-                            </div>
-                            <div className="attr-item">
-                              <span className="text">
-                                VGA: VGA Tích Hợp (Onboard)
-                              </span>
-                            </div>
-                          </div>
-                          <div className="p-gift-holder">
-                            <div className="p-gift-list">
-                              <div className="item">
-                                <img
-                                  src="./assets/promo1.jpg"
-                                  alt=""
-                                  style={{ width: "28px" }}
-                                />
-                              </div>
-                              <div className="item">
-                                <img
-                                  src="./assets/promofix.png"
-                                  alt=""
-                                  style={{ width: "28px" }}
-                                />
-                              </div>
-                              <div className="item">
-                                <img
-                                  src="./assets/promo2.png"
-                                  alt=""
-                                  style={{ width: "28px" }}
-                                />
-                              </div>
-                            </div>
-                          </div>
-                          <div className="p-action">
-                            <span className="p-qty">
-                              <i className="fa-solid fa-check"></i>
-                              Sẵn hàng
-                            </span>
-                            <a href="" className="p-buy">
-                              <i className="fa-solid fa-cart-shopping"></i>
-                            </a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="slider-product-one-content-item">
-                    <div className="p-component">
-                      <img src="assets/laptop5.jpg" alt="" />
-                      <div className="slider-product-one-content-item-text">
-                        <div className="review-count">
-                          <li>
-                            <i className="fa-solid fa-star"></i>
-                            <i className="fa-solid fa-star"></i>
-                            <i className="fa-solid fa-star"></i>
-                            <i className="fa-solid fa-star"></i>
-                            <i className="fa-solid fa-star"></i>
-                            <span className="p-count-rate">(0)</span>
-                          </li>
-                          <p className="p-sku">MÃ: LAHP249</p>
-                        </div>
-                        <div className="p-info">
-                          <p className="p-name">
-                            <a href="">
-                              Laptop HP Pavilion X360 14-ek2017TU (9Z2V5PA)
-                              (Core 5 120U/16GB RAM/512GB SSD/14 FHD Cảm
-                              ứng/Bút/Win11/Bạc)
-                            </a>
-                          </p>
-                          <span className="p-mprice">24.899.000</span>
-                          <span className="p-discount">(Tiết kiệm: 10%)</span>
-                          <span className="p-price">22.499.000</span>
-                        </div>
-                        <div className="p-promotion-group">
-                          <div className="p-promotion-holder">
-                            <div className="attr-item">
-                              <span className="text">CPU: Intel Core i5</span>
-                            </div>
-                            <div className="attr-item">
-                              <span className="text">RAM: 16 GB</span>
-                            </div>
-                            <div className="attr-item">
-                              <span className="text">SSD: 512 GB</span>
-                            </div>
-                            <div className="attr-item">
-                              <span className="text">Màn hình: 14 inch</span>
-                            </div>
-                            <div className="attr-item">
-                              <span className="text">
-                                VGA: VGA Tích Hợp (Onboard)
-                              </span>
-                            </div>
-                          </div>
-                          <div className="p-gift-holder">
-                            <div className="p-gift-list">
-                              <div className="item">
-                                <img
-                                  src="./assets/promo1.jpg"
-                                  alt=""
-                                  style={{ width: "28px" }}
-                                />
-                              </div>
-                              <div className="item">
-                                <img
-                                  src="./assets/promofix.png"
-                                  alt=""
-                                  style={{ width: "28px" }}
-                                />
-                              </div>
-                              <div className="item">
-                                <img
-                                  src="./assets/promo2.png"
-                                  alt=""
-                                  style={{ width: "28px" }}
-                                />
-                              </div>
-                            </div>
-                          </div>
-                          <div className="p-action">
-                            <span className="p-qty">
-                              <i className="fa-solid fa-check"></i>
-                              Sẵn hàng
-                            </span>
-                            <a href="" className="p-buy">
-                              <i className="fa-solid fa-cart-shopping"></i>
-                            </a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="slider-product-one-content-item">
-                    <div className="p-component">
-                      <img src="assets/laptop5.jpg" alt="" />
-                      <div className="slider-product-one-content-item-text">
-                        <div className="review-count">
-                          <li>
-                            <i className="fa-solid fa-star"></i>
-                            <i className="fa-solid fa-star"></i>
-                            <i className="fa-solid fa-star"></i>
-                            <i className="fa-solid fa-star"></i>
-                            <i className="fa-solid fa-star"></i>
-                            <span className="p-count-rate">(0)</span>
-                          </li>
-                          <p className="p-sku">MÃ: LAHP249</p>
-                        </div>
-                        <div className="p-info">
-                          <p className="p-name">
-                            <a href="">
-                              Laptop HP Pavilion X360 14-ek2017TU (9Z2V5PA)
-                              (Core 5 120U/16GB RAM/512GB SSD/14 FHD Cảm
-                              ứng/Bút/Win11/Bạc)
-                            </a>
-                          </p>
-                          <span className="p-mprice">24.899.000</span>
-                          <span className="p-discount">(Tiết kiệm: 10%)</span>
-                          <span className="p-price">22.499.000</span>
-                        </div>
-                        <div className="p-promotion-group">
-                          <div className="p-promotion-holder">
-                            <div className="attr-item">
-                              <span className="text">CPU: Intel Core i5</span>
-                            </div>
-                            <div className="attr-item">
-                              <span className="text">RAM: 16 GB</span>
-                            </div>
-                            <div className="attr-item">
-                              <span className="text">SSD: 512 GB</span>
-                            </div>
-                            <div className="attr-item">
-                              <span className="text">Màn hình: 14 inch</span>
-                            </div>
-                            <div className="attr-item">
-                              <span className="text">
-                                VGA: VGA Tích Hợp (Onboard)
-                              </span>
-                            </div>
-                          </div>
-                          <div className="p-gift-holder">
-                            <div className="p-gift-list">
-                              <div className="item">
-                                <img
-                                  src="./assets/promo1.jpg"
-                                  alt=""
-                                  style={{ width: "28px" }}
-                                />
-                              </div>
-                              <div className="item">
-                                <img
-                                  src="./assets/promofix.png"
-                                  alt=""
-                                  style={{ width: "28px" }}
-                                />
-                              </div>
-                              <div className="item">
-                                <img
-                                  src="./assets/promo2.png"
-                                  alt=""
-                                  style={{ width: "28px" }}
-                                />
-                              </div>
-                            </div>
-                          </div>
-                          <div className="p-action">
-                            <span className="p-qty">
-                              <i className="fa-solid fa-check"></i>
-                              Sẵn hàng
-                            </span>
-                            <a href="" className="p-buy">
-                              <i className="fa-solid fa-cart-shopping"></i>
-                            </a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-              </Slider>
-</div> */
-}
