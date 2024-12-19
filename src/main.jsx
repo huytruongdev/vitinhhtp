@@ -13,8 +13,10 @@ import "slick-carousel/slick/slick-theme.css";
 import "slick-carousel/slick/slick.css";
 import App from './App';
 import Loader from './components/Loader/Loader';
+import { Cart, Home, ProductDetail, SearchPage, Test, Payment } from './pages/render';
 import NotFound from './pages/NotFound/NotFound';
-import { Cart, Home, ProductDetail, SearchPage, Test } from './pages/render';
+
+
 
 function lazyComponent(element) {
   return (
@@ -46,6 +48,11 @@ const router = createBrowserRouter([
         element: lazyComponent(<Cart />)
       },
       {
+        path: "/payment",
+        element: lazyComponent(<Payment />)
+      },
+      {
+
         path: "/test",
         element: lazyComponent(<Test />)
       },
@@ -53,6 +60,7 @@ const router = createBrowserRouter([
         path: "*",
         element: <NotFound />
       }
+      
     ]
   },
 ]);

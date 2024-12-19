@@ -19,6 +19,9 @@ const App = () => {
             <Link to="/cart">Cart</Link>
           </li>
           <li>
+            <Link to="/payment">Payment</Link>
+          </li>
+          <li>
             <Link to="/search-page">Search Page</Link>
           </li>
           <li>

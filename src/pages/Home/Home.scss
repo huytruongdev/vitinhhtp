@@ -91,9 +91,9 @@ a {
 }
 .li-catcha-menu:hover {
   cursor: pointer;
-  width:105%;
+  // width:105%;
   background-color: red; 
-  z-index: 10;
+  z-index: 1;
 }
 .li-catcha-menu:first-of-type:hover {
   background-color: red; 
@@ -119,8 +119,9 @@ a {
   background-color:white;
   padding: 10px;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-  visibility: visible; 
-  z-index: 0;
+  visibility: hidden; 
+  z-index: 2;
+  min-height: 607px;
 }
 .li-catcha-menu:hover .popup-content {
   visibility: visible;
@@ -129,20 +130,24 @@ a {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
+  gap:5px;
 }
-
 .popup-container-item {
-  flex: 1 1 20%; 
+  flex: 1 1 auto; 
   max-width: 300px;
   min-width: 200px;
   box-sizing: border-box;
-  height: auto;
   padding: 8px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
 }
+
+
 .popup-box-title {
   display: block;
   margin-bottom: 8px; 
-  font-size: 15px;
+  font-size: 14px;
   font-weight: 600; 
   color: red;
 }
@@ -238,34 +243,39 @@ a {
 }
 
 
-
-
-
-
 /* ______________Slide-Product____________________ */
-.slider-product-one .container-main {
+.slider-product-one  {
   overflow: hidden;
+  height: auto;
+  position: relative;
+  padding: 0 10px;
+  margin-right: auto;
+  margin-left: auto;
 }
 .slider-product-one-content {
   padding-top: 10px;
-  margin-bottom: 10px;
-  /* min-width:  1200px; */
+  width:  1400px; 
 }
 .slider-product-one-content-title {
   padding: 0 10px;
   display: flex;
-  -webkit-box-align: baseline;
-  -ms-flex-align: baseline;
-  align-items: baseline;
   position: relative;
   margin-bottom: 10px;
   align-items: center;
   text-align: center;
 }
+.slider-product-one-content-container .slick-slide > div{
+  margin: 0 5px;
+  
+}
+.slider-product-one-content-container .slick-list{
+  height: 619px;
+  margin: 0 -5px;
+}
 .h-title-main {
   color: #333e48;
   font-size: 28px;
-  font-weight: 000;
+  font-weight: 600;
   margin: auto 50px auto 0px;
   text-transform: uppercase;
   line-height: 28px;
@@ -300,7 +310,7 @@ a {
   top: 50%;
   transform: translateY(-50%);
   background: #ed1b24;
-  padding: 3px 10px 5px 15px;
+  padding: 5px 10px 5px 15px;
   color: #fff;
   border-radius: 10px;
   font-weight: 500;
@@ -442,7 +452,6 @@ a {
 }
 .slider-product-one-content-container {
   position: relative;
-  margin: 0 10px 0px;
 }
 .slider-product-one-btn {
   position: absolute;
