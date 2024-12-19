@@ -1,47 +1,74 @@
 import Breadcrumb from "@/components/Breadcrumb/Breadcrumb";
 import { Box, Grid2 as Grid } from "@mui/material";
 import { Link } from "react-router-dom";
-import './ProductDetail.scss'
+import RatingShow from "../../components/Star/RatingShow";
+import './ProductDetail.scss';
+import ProductGallery from "./components/ProductGallery/ProductGallery";
 
 const ProductDetail = () => {
   return (
     <>
-      <Breadcrumb>
-        <Link to="/home">
-          Trang chủ
-        </Link>
-        <Link to="#">
-          Màn Hình Máy Tính, Tay Treo
-        </Link>
-        <p>
-          Màn hình LG 24MR400-B (23.8 ...
-        </p>
-      </Breadcrumb>
+      <div className="breadcrumb">
+        <Breadcrumb>
+          <Link to="/home">
+            <i className="fa fa-home px-2" aria-hidden="true"></i> Trang chủ
+          </Link>
+          <Link to="#">
+            Màn Hình Máy Tính, Tay Treo
+          </Link>
+          <p className="m-0">
+            Màn hình LG 24MR400-B (23.8 ...
+          </p>
+        </Breadcrumb>
+      </div>
       <Box sx={{ flexGrow: 1 }}>
         <Grid container spacing={2}>
-          <div className="container-detail">
+          <div className="container-main__detail">
             <Grid size={7}>
-              <div className="container-left">
-                <div className="img">
-                  <img src="https://hanoicomputercdn.com/media/product/77685_man_hinh_lg_24mr400_b_850x850_3.jpg" alt="LG" />
-                </div>
+              <div className="product-gallery">
+                <ProductGallery />
               </div>
             </Grid>
             <Grid size={5}>
               <div className="container-right">
                 <h1>Màn hình LG 24MR400-B (23.8 inch/FHD/IPS/100Hz/5ms)</h1>
-                <p>Mã SP: MOLG253 | Đánh giá: rate 0 | Bình luận: 2 </p>
+                <p>Mã SP: MOLG253 | Đánh giá: <RatingShow average={0} /> | Bình luận: 2 </p>
                 <p>Lượt xem: 27.322</p>
                 <div className="summary">
                   <h4>Thông số sản phẩm</h4>
-                  <p>Kích thước: 23.8 inch</p>
-                  <p>Độ phân giải: FHD 1920 x 1080</p>
+                  <p className="summary__item">Độ phân giải: FHD 1920 x 1080</p>
+                  <p className="summary__item">Tấm nền: IPS</p>
+                  <p className="summary__item">Tần số quét: 100Hz</p>
+                  <p className="summary__item">Thời gian phản hồi: 5ms</p>
+                  <p className="summary__item">Độ sáng: 250 nits</p>
+                  <p className="summary__item">VESA: 100x100mm</p>
+                  <p className="summary__item">Cổng kết nối: HDMI x1, VGA x1</p>
                 </div>
                 <div className="price">
                   <span className="price_sale">2.179.000₫</span>
                   <span className="price_origin">2.689.000₫</span>
                   <span className="price_saving">Tiết kiệm: 590.000₫</span>
                 </div>
+                <div className="quantity-container">
+                  <div className="quantity-action">
+                    <label>Số lượng: </label>
+                    <button type="button" className="quantity-btn quantity-btn--left">
+                      <i className="fa fa-minus"></i>
+                    </button>
+                    <input type="text" className="quantity-number" value={1} />
+                    <button type="button" className="quantity-btn quantity-btn--right">
+                      <i className="fa fa-plus"></i>
+                    </button>
+                  </div>
+                  <button className="add-cart">Thêm vào giỏ hàng</button>
+                  <div className="add-wishlist">
+                    <i className="fa-solid fa-heart icon-red"></i>
+                  </div>
+                </div>
+                <button className="btn-buy-now">
+                  <b>Mua ngay</b>
+                  <p>Giao nhanh tận nơi, miễn phí toàn quốc</p>
+                </button>
               </div>
             </Grid>
           </div>
