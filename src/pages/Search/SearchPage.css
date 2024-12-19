@@ -156,11 +156,17 @@
 .body-new .cate-content .cate-left .p-filter-item .p-filter-list-value .flex-column .Nav.Link :hover{
 
    transition: all .2s ease;
-} 
+}
+
+
+.body-new .cate-content .cate-left .p-filter-item .p-filter-list-value .slider-range {
+   position: relative;
+}
+
 
 .body-new .cate-content .cate-left .p-filter-item .p-filter-list-value .slider-range .ui-slider-range {
 
-   width: 250px;
+   width: 240px;
    height: 6px;
    background-color: #89a1db;
    position: relative;
@@ -532,11 +538,42 @@ input[type="number"] {
     padding-left:10px;
 }
 
-/* .list-brand-check{
-   
+.progress-bar-l{
+   width: 50%;
+   height: 15px;
+   cursor: pointer;
+   background-color: #ccc;
+   appearance: none;
+   outline: none;
+   border-radius: 5px;
+   position: absolute;
+   top: -4px;
+   left: -5px;
+   opacity: 0;
 }
 
-   
 
-margin: 0;
-overflow: auto; */
+.progress-bar-r{
+   position: absolute;
+   width: 120px;
+   direction: rtl; /* Đảo hướng thanh trượt */
+   appearance: none; /* Loại bỏ kiểu mặc định */
+   height: 15px;
+   background-color: #ccc;
+   outline: none;
+   border-radius: 5px;
+   top: -4px;
+   right: -5px;
+   opacity: 0;
+}
+
+
+.progress-bar::-webkit-slider-thumb {
+   appearance: none;
+   width: 12px;
+   height: 12px;
+   border-radius: 50%;
+   background: #007bff;
+   cursor: pointer;
+}
+
