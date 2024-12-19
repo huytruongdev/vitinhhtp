@@ -16,7 +16,7 @@
 
 }
 .bt2{
-    width: 70%;
+    width: 100%;
     float: left;
     display: flex;
     align-items: center;
@@ -90,7 +90,7 @@
     color: white;
 }
 .phone-cart {
-    width: 12%;
+    width: 14%;
     float: right;
     display: flex;
     align-items: center;
@@ -99,6 +99,7 @@
     border-radius: 23px;
     height: 65%;
     box-sizing: border-box;
+    align-self: end;
 }
 .icon-c {
     width: 65px;
@@ -178,27 +179,28 @@
 .box-address{
     width: 100%;
     float: left;
-    padding: 32px;
+    padding: 3%;
     border: 1px solid #e1e1e1;
     border-radius: 6px;
     justify-content: center;
     margin-bottom: 30px;
-    display: none;
     box-sizing: border-box;
+    display: flex;
 }
 .ba1{
-    width: 782px;
+    width: 100%;
     margin: 0 auto;
-    background-color: aqua;
+    box-sizing: border-box;
 }
 .item-tk {
     width: 100%;
     float: left;
     margin-bottom: 10px;
     display: flex;
+    justify-content: center;
 }
 .item-tk-ct {
-    width: calc(100% - 180px);
+    width: 70%;
     float: left;
     position: relative;
 }
@@ -211,7 +213,7 @@
     border: 1px solid #ddd;
     padding-left: 5px;
 }
-.item-tk label {
+/* .item-tk label {
     width: 180px;
     float: left;
     font-size: 16px;
@@ -220,7 +222,7 @@
     height: 40px;
     align-items: center;
     font-weight: 700;
-}
+} */
 .title-c-ct {
     width: 100%;
     float: left;
@@ -238,7 +240,7 @@
     box-sizing: border-box;
 }
 .label-select-radio label {
-    width: auto !important;
+    width: 100%;
     float: left;
     margin-right: 30px;
     display: flex;
@@ -246,6 +248,7 @@
     position: relative;
     line-height: 1 !important;
     height: auto !important;
+    margin-bottom: 10px;
 }
 .item-pro-cart {
     width: 100%;
@@ -423,26 +426,26 @@ img {
     border-radius: 6px;
     box-sizing: border-box;
 }
-.item-tk-ct {
+/* .item-tk-ct {
     width: 100%;
     float: left;
     margin-bottom: 10px;
-}
-.label-select-radio label {
-    width: auto !important;
-    float: left;
-    margin-right: 30px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex
-;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    position: relative;
-    line-height: 1 !important;
-    height: auto !important;
-}
+} */
+// .label-select-radio label {
+//     width: auto !important;
+//     float: left;
+//     margin-right: 30px;
+//     display: -webkit-box;
+//     display: -ms-flexbox;
+//     display: flex
+// ;
+//     -webkit-box-align: center;
+//     -ms-flex-align: center;
+//     align-items: center;
+//     position: relative;
+//     line-height: 1 !important;
+//     height: auto !important;
+// }
 .radiobtn {
     position: absolute;
     top: 0;
@@ -557,20 +560,18 @@ iframe {
 .item-tk {
     width: 100%;
     float: left;
-    margin-bottom: 4px;
+    margin-bottom: 10px;
     display: flex;
 }
 .item-tk label {
-    width: 23%;
+    width: 20%;
     float: left;
     font-size: 14px;
     line-height: 1.5;
     display: flex;
     height: 40px;
     align-items: center;
-}
-.item-tk-ct {
-    width: calc(100% - 96px);
+    font-weight: 600;
 }
 .rc-anchor-pt {
     margin: 2px 11px 0 0;
