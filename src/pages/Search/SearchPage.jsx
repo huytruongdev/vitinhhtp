@@ -331,8 +331,8 @@ const SearchPage = () => {
                                     <img src="assets/1610_bang-gia-may-vi-tinh.png" alt="" className='img-load'/>
                                     <div className='tool-tip' style={{
                                           display: block ? 'block' : 'none',
-                                          left: `calc(0px + ${mousePosition.x}px)`, // ❌ Lỗi ReferenceError
-                                        marginTop: `calc(-500px + ${mousePosition.y}px)`
+                                          left: `calc(-500px + ${mousePosition.x}px)`, // ❌ Lỗi ReferenceError
+                                        marginTop: `calc(-850px + ${mousePosition.y}px)`
 
                                     }} > 
                                         <a href="" className='hover_name'>
