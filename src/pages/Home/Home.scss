@@ -129,20 +129,24 @@ a {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
+  gap:5px;
 }
-
 .popup-container-item {
-  flex: 1 1 20%; 
+  flex: 1 1 auto; 
   max-width: 300px;
   min-width: 200px;
   box-sizing: border-box;
-  height: auto;
   padding: 8px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
 }
+
+
 .popup-box-title {
   display: block;
   margin-bottom: 8px; 
-  font-size: 15px;
+  font-size: 14px;
   font-weight: 600; 
   color: red;
 }
@@ -442,7 +446,6 @@ a {
 }
 .slider-product-one-content-container {
   position: relative;
-  margin: 0 10px 0px;
 }
 .slider-product-one-btn {
   position: absolute;
