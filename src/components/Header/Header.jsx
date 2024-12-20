@@ -1,4 +1,5 @@
 import "./Header.scss";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
@@ -226,13 +227,13 @@ const Header = () => {
           <div className="header-bottom-row pd-10">
             <div className="header-bottom-left">
               <div className="logo">
-                <a href="">
+                <Link to="/home">
                   <img
                     src="/assets/trans_bg.png"
                     alt=""
                     style={{ width: "56px" }}
                   />
-                </a>
+                </Link>
               </div>
             </div>
             <div className="header-bottom-item">
@@ -296,12 +297,12 @@ const Header = () => {
             </div>
             <div className="user-action">
               <div className="cart">
-                <a href="/src/pages/Cart.jsx" className="cart-summary">
+                <Link className="cart-summary" to="/cart">
                   <div className="header-cart-item">
                     <i className="fa-solid fa-cart-shopping"></i>
                     <span className="cart-text">Giỏ hàng</span>
                   </div>
-                </a>
+                </Link>
               </div>
             </div>
           </div>

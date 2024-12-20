@@ -92,7 +92,7 @@ const Footer = () => {
                 <span className="links-group-title">
                   Phương thức thanh toán
                 </span>
-                <img src="/assets/pttt.png" className='img1' alt="" />
+                <img src="/assets/pttt.png"  alt="" />
               </div>
               <div className="links-group-container">
                 <span className="links-group-title">Giới thiệu HTP PC</span>
