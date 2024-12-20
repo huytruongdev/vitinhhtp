@@ -5,6 +5,8 @@ import RatingShow from "../../components/Star/RatingShow";
 import './ProductDetail.scss';
 import ProductGallery from "./components/ProductGallery/ProductGallery";
 import Spec from "./components/Spec/Spec";
+import Review from "./components/Review/Review";
+import News from "./components/News/News";
 
 const ProductDetail = () => {
   return (
@@ -82,9 +84,9 @@ const ProductDetail = () => {
                       <p>Khi lên đời từ máy cũ</p>
                     </div>
                   </div>
-                  <a className="upgrade-btn">
+                  <Link to='#' className="upgrade-btn">
                     Lên Đời Ngay
-                  </a>
+                  </Link>
                 </div>
               </div>
             </Grid>
@@ -95,21 +97,10 @@ const ProductDetail = () => {
               <iframe width="698" height="420" src="https://www.youtube.com/embed/PUVuHX-fyRc"
                 title="LG IPS Monitor 24MR400 Full HD 1080p AMD Free Sync - 100Hz | ASMR Unboxing" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
             </div>
-          </Grid>
-          <Grid size={5}>
-            <div className="group-container">
-              <h2 className="group-title">Thông số kỹ thuật</h2>
-              <Spec />
 
-            </div>
-          </Grid>
-          <Grid size={7}>
             <div className="group-container">
               <h2 className="group-title">Nhận xét và đánh giá</h2>
-
-              <div className="review">
-
-              </div>
+              <Review />
               <div className="comment-box">
                 <textarea id="comment" placeholder="Mời bạn để lại bình luận..." />
                 <div className="comment-action">
@@ -141,6 +132,16 @@ const ProductDetail = () => {
                 </div>
               </div>
 
+            </div>
+          </Grid>
+          <Grid size={5}>
+            <div className="group-container">
+              <h2 className="group-title">Thông số kỹ thuật</h2>
+              <Spec />
+            </div>
+            <div className="group-container">
+              <h2 className="group-title">Tin tức mới nhất</h2>
+              <News />
             </div>
           </Grid>
         </Grid>
