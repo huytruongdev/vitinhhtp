@@ -32,7 +32,7 @@ const router = createBrowserRouter([
     element: lazyComponent(<App />),
     children: [
       {
-        path: "/home",
+        path: "/",
         element: lazyComponent(<Home />),
       },
       {
@@ -60,7 +60,7 @@ const router = createBrowserRouter([
         path: "*",
         element: <NotFound />
       }
-      
+
     ]
   },
 ]);

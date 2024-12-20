@@ -1,6 +1,6 @@
 import "./Home.scss";
 import Slider from "react-slick";
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 const Home = () => {
   const [laptops, setLaptops] = useState([]);
@@ -22,11 +22,6 @@ const Home = () => {
         setLoading(false);
       });
   }, []);
-  
-
-  if (loading) {
-    return <p>Loading...</p>;
-  }
 
   const settings = {
     dots: false,
@@ -38,15 +33,13 @@ const Home = () => {
     speed: 1000,
     autoplaySpeed: 1500,
   };
-  const multislider = {
+  const multiSlider = {
     dots: false,
     infinite: true,
     slidesToShow: 5,
     slidesToScroll: 1,
     arrows: true,
     autoplay: true,
-    // speed: 1000,
-    // autoplaySpeed: 1500,
   };
   return (
     <section className="home-body">
@@ -4336,7 +4329,7 @@ const Home = () => {
                   Máy Đọc Sách
                 </a>
                 <a href="" className="hover-red">
-                  Đồ Hồ Thông Minh
+                  Đồng Hồ Thông Minh
                 </a>
               </div>
               <a href="" className="viewall">
@@ -4345,7 +4338,7 @@ const Home = () => {
               </a>
             </div>
             <div className="slider-product-one-content-container">
-              <Slider {...multislider}>
+              <Slider {...multiSlider}>
                 {laptops.map((laptop) => (
                   <div
                     className="slider-product-one-content-item"
@@ -4423,7 +4416,7 @@ const Home = () => {
               </a>
             </div>
             <div className="slider-product-one-content-container">
-              <Slider {...multislider}>
+              <Slider {...multiSlider}>
                 {laptops.map((laptop) => (
                   <div
                     className="slider-product-one-content-item"
@@ -4446,7 +4439,7 @@ const Home = () => {
                         <div className="p-info">
                           <p className="p-name">
                             <Link to="/product-detail">
-                            {laptop.productName}</Link>
+                              {laptop.productName}</Link>
                           </p>
                           <span className="p-mprice">{laptop.originPrice}</span>
                           <span className="p-discount">
@@ -4502,7 +4495,7 @@ const Home = () => {
               </a>
             </div>
             <div className="slider-product-one-content-container">
-              <Slider {...multislider}>
+              <Slider {...multiSlider}>
                 {laptops.map((laptop) => (
                   <div
                     className="slider-product-one-content-item"
@@ -4589,7 +4582,7 @@ const Home = () => {
               </a>
             </div>
             <div className="slider-product-one-content-container">
-              <Slider {...multislider}>
+              <Slider {...multiSlider}>
                 {laptops.map((laptop) => (
                   <div
                     className="slider-product-one-content-item"
@@ -4670,7 +4663,7 @@ const Home = () => {
               </a>
             </div>
             <div className="slider-product-one-content-container">
-              <Slider {...multislider}>
+              <Slider {...multiSlider}>
                 {laptops.map((laptop) => (
                   <div
                     className="slider-product-one-content-item"
@@ -4760,7 +4753,7 @@ const Home = () => {
               </a>
             </div>
             <div className="slider-product-one-content-container">
-              <Slider {...multislider}>
+              <Slider {...multiSlider}>
                 {laptops.map((laptop) => (
                   <div
                     className="slider-product-one-content-item"
@@ -4853,7 +4846,7 @@ const Home = () => {
               </a>
             </div>
             <div className="slider-product-one-content-container">
-              <Slider {...multislider}>
+              <Slider {...multiSlider}>
                 {laptops.map((laptop) => (
                   <div
                     className="slider-product-one-content-item"
@@ -4934,7 +4927,7 @@ const Home = () => {
               </a>
             </div>
             <div className="slider-product-one-content-container">
-              <Slider {...multislider}>
+              <Slider {...multiSlider}>
                 {laptops.map((laptop) => (
                   <div
                     className="slider-product-one-content-item"
@@ -5018,14 +5011,16 @@ const Home = () => {
               </a>
             </div>
             <div className="slider-product-one-content-container">
-              <Slider {...multislider}>
+              <Slider {...multiSlider}>
                 {laptops.map((laptop) => (
                   <div
                     className="slider-product-one-content-item"
                     key={laptop.id}
                   >
                     <div className="p-component">
-                      <img src={laptop.imageUrl} alt={laptop.productName} />
+                      <Link to='/product-detail'>
+                        <img src={laptop.imageUrl} alt={laptop.productName} />
+                      </Link>
                       <div className="slider-product-one-content-item-text">
                         <div className="review-count">
                           <li>
@@ -5040,7 +5035,7 @@ const Home = () => {
                         </div>
                         <div className="p-info">
                           <p className="p-name">
-                            <a href="#">{laptop.productName}</a>
+                            <Link to='/product-detail'>{laptop.productName}</Link>
                           </p>
                           <span className="p-mprice">{laptop.originPrice}</span>
                           <span className="p-discount">
@@ -5099,7 +5094,7 @@ const Home = () => {
               </a>
             </div>
             <div className="slider-product-one-content-container">
-              <Slider {...multislider}>
+              <Slider {...multiSlider}>
                 {laptops.map((laptop) => (
                   <div
                     className="slider-product-one-content-item"

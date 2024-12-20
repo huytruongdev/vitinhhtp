@@ -227,7 +227,7 @@ const Header = () => {
           <div className="header-bottom-row pd-10">
             <div className="header-bottom-left">
               <div className="logo">
-                <Link to="/home">
+                <Link to="/">
                   <img
                     src="/assets/trans_bg.png"
                     alt=""
