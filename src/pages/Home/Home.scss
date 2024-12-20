@@ -66,7 +66,7 @@ a {
 }
 
 .home-page-slider-left .li-catcha-menu {
-  padding-left: 10px;
+  padding:0 10px;
   display: flex;
   width: 100%;  
   justify-content: space-between;  
@@ -93,7 +93,7 @@ a {
   cursor: pointer;
   // width:105%;
   background-color: red; 
-  z-index: 1;
+  z-index: 10;
 }
 .li-catcha-menu:first-of-type:hover {
   background-color: red; 
@@ -112,7 +112,7 @@ a {
 // _________________________Hover_Menu_____________________________->
 .popup-content {
   position: absolute;
-  left:100%;
+  left:99%;
   top: 0; 
   transform: translateY(0%); 
   width: 1125px;
@@ -120,7 +120,7 @@ a {
   padding: 10px;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
   visibility: hidden; 
-  z-index: 2;
+  z-index: 1;
   min-height: 607px;
 }
 .li-catcha-menu:hover .popup-content {

@@ -248,9 +248,11 @@ const Header = () => {
                       className="global-search"
                     />
                   </div>
-                  <button className="search-icon">
-                    <i className="fa-solid fa-magnifying-glass"></i>
-                  </button>
+                  <Link to="/search-page"> 
+                    <button className="search-icon">
+                      <i className="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                  </Link>
                 </form>
               </div>
             </div>
