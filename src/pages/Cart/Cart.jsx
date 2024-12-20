@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './Cart.scss';
-
+// import Payment from './Payment.jsx'
 const Cart = () => {
     // Dữ liệu giỏ hàng (sản phẩm, giá, số lượng)
     const [cartItems, setCartItems] = useState([
@@ -155,7 +155,39 @@ const Cart = () => {
             <div className="body-card">
                 <div className="card">
                     <div className="container">
-                        <div className="breadcrumb mb-0 p-0">
+                    <div class="bt1">
+                        <div class="bt2">
+                            <div class="bt3">
+                                <a href="/" class="bt31">
+                                {/* <img src="/assets/trans_bg.png" alt="hanoicomputer"/> */}
+                                </a>
+                                <div class="bt32">
+                                    <div class="bt321">
+                                        <span class="txt">Giỏ Hàng</span>
+                                        <div class="bar"></div>
+                                        <div class="circle">1</div>
+                                    </div>
+                                    
+                                    <div class="bt321">
+                                        
+                                        <span class="txt">Thanh Toán Đặt Hàng</span>
+                                        <div class="circle1">2</div>
+                                        
+                                    </div>
+                                </div>
+                                <div class="phone-cart1">
+                                    <span class="icon-c">
+                                        <i class="fa-solid fa-phone"></i>
+                                    </span>
+                                    <span class="txt">
+                                        <span class="txt1">Mua hàng online</span>
+                                        <span class="txt2">2222.2222</span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                        {/* <div className="breadcrumb mb-0 p-0">
                             <ul className="list-unstyled m-0">
                                 <li>
                                     <a href="/home" itemprop="item">
@@ -173,7 +205,7 @@ const Cart = () => {
                                 </li>
                             </ul>
                         </div>
-                        <div className="title-n">Cart</div>
+                        <div className="title-n">Cart</div> */}
                         <div className="noidung">
                             <div className="bentrai">
                                 <div className="new-cart-items-row">
