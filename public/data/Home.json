@@ -1,0 +1,182 @@
+{
+    "laptops": [
+      {
+        "id": 1,
+        "productName": "Laptop Acer Aspire Lite AL14-51M-59BN (NX.KTXSV.001) (i5 1235U/16GB RAM/512GB SSD/14.0 inch FHD IPS/Win 11/Bạc/Vỏ kim loại) ",
+        "sku": "LTAC911",
+        "originPrice": "14.999.000₫",
+        "percentSale": 9,
+        "salePrice": "13.599.000₫",
+        "infos": [
+          "CPU: Intel Core i5",
+          "RAM: 16GB",
+          "SSD: 512 GB",
+          "Màn hình: 16 inch",
+          "VGA: VGA Tích Hợp (Onboard)"
+        ],
+        "imageUrl": "https://hanoicomputercdn.com/media/product/85639_laptop_acer_aspire_lite_al14.jpg"
+      },
+      {
+        "id": 2,
+        "productName": "Laptop HP 14-ep1011TU (9Z2W3PA) (Core 5 120U/16GB RAM/512GB SSD/14 FHD/Win11/Bạc)",
+        "sku": "LAHP248",
+        "originPrice": "20.599.000₫",
+        "percentSale": 13,
+        "salePrice": "17.899.000₫",
+        "infos": [
+          "CPU: Ultra 5",
+          "RAM: 16GB",
+          "SSD: 512 GB",
+          "Màn hình: 14 inch",
+          "VGA: VGA Tích Hợp (Onboard)"
+        ],
+        "imageUrl": "https://hanoicomputercdn.com/media/product/250_84587_laptop_hp_14_ep1011tu_9z2w3pa_core_5_120u_16gb_ram_512gb_ssd_14_fhd_win11_bac__4_.jpg"
+      },
+      {
+        "id": 3,
+        "productName": "Laptop Asus VivoBook X1504ZA-NJ582W (i3 1215U/8GB RAM/512GB SSD/15.6 FHD/Win11/Bạc)",
+        "sku": "LTAU835",
+        "originPrice": "12.990.000₫",
+        "percentSale": 28,
+        "salePrice": "9.399.000₫",
+        "infos": [
+          "CPU: Intel Core i3",
+          "RAM: 8GB",
+          "SSD: 512 GB",
+          "Màn hình: 15.6 inch",
+          "VGA: VGA Tích Hợp (Onboard)"
+        ],
+        "imageUrl": "https://hanoicomputercdn.com/media/product/250_76877_laptop_asus_vivobook_x1504za_nj582w__6_.jpg"
+      },
+      {
+        "id": 4,
+        "productName": "Asus Vivobook 14 OLED A1405VA-KM095W (i5 13500H/16GB RAM/512GB SSD/14 2.8K Oled/Win11/Bạc/Chuột)",
+        "sku": "LTAU780",
+        "originPrice": "20.999.000₫",
+        "percentSale": 22,
+        "salePrice": "16.299.000₫",
+        "infos": [
+          "CPU: Intel Core i5 13500H",
+          "RAM: 8GB",
+          "SSD: 512 GB",
+          "Màn hình: 14 inch",
+          "VGA: Intel Iris Xe Graphics Onboard"
+        ],
+        "imageUrl": "https://hanoicomputercdn.com/media/product/250_71159_ltau870.png"
+      },
+      {
+        "id": 5,
+        "productName": "Laptop Acer Swift Lite 14 AI SFL14-51M-56HS (NX.J1HSV.002) (Ultra 5-125U/16GB RAM/512GB SSD/14.0 inch FHD+/Win11/Bạc/vỏ nhôm) (2024)",
+        "sku": "LTAC919",
+        "originPrice": "19.999.000₫",
+        "percentSale": 8,
+        "salePrice": "18.399.000₫",
+        "infos": [
+          "CPU: Ultra 5",
+          "RAM: 16GB",
+          "SSD: 512 GB",
+          "Màn hình: 14 inch",
+          "VGA: VGA Tích Hợp (Onboard)"
+        ],
+        "imageUrl": "https://hanoicomputercdn.com/media/product/250_86164_laptop_acer_swift_lite_14_ai_sfl14_51m_56hs_nx_j1hsv_002_ultra_5_125u_16gb_ram_512gb_ssd_14_0_inch_fhd_win11_bac_vo_nhom_2024.jpg"
+      },
+      {
+        "id": 6,
+        "productName": "Laptop AI LG Gram 14Z90S-G.AH75A5 (Ultra 7-155H/16GB RAM/512GB SSD/14.0 inch WUXGA/Win 11 Home Adv/Đen) (2024)",
+        "sku": "LTLG054",
+        "originPrice": "41.399.000₫",
+        "percentSale": 26,
+        "salePrice": "30.499.000₫",
+        "infos": [
+          "CPU: Ultra 7",
+          "RAM: 16GB",
+          "SSD: 512 GB",
+          "Màn hình: 14 inch",
+          "VGA: VGA Tích Hợp (Onboard)"
+        ],
+        "imageUrl": "https://hanoicomputercdn.com/media/product/250_83372_laptop_lg_gram_14z90s_g_ah75a5_ultra_7_155h_16gb_ram_512gb_ssd_14__1_.jpg"
+      },
+      {
+        "id": 7,
+        "productName": "Laptop LG Gram Pro 16Z90SP-K.AH75A5 (Ultra 7-155H /16GB RAM/512GB SSD/16.0 inch OLED/Win 11 Home Adv/Đen) (2024)",
+        "sku": "LTLG054",
+        "originPrice": "51.499.000₫",
+        "percentSale": 11,
+        "salePrice": "45.999.000₫",
+        "infos": [
+          "CPU: Ultra 7",
+          "RAM: 16GB",
+          "SSD: 512 GB",
+          "Màn hình: 16 inch",
+          "VGA: VGA Tích Hợp (Onboard)"
+        ],
+        "imageUrl": "https://hanoicomputercdn.com/media/product/250_83374_laptop_lg_gram_pro_16z90sp_k_ah75a5_ultra_7_155h_16gb_ram_512gb_ssd_16__1_.jpg"
+      }
+    ],
+    "computer": [
+      {
+        "id": 1,
+        "productName": "HTP APOLLO i14-Black Myth Wukong (GeForce RTX 4070Ti Super /i7 14700K/Z790/32G RAM/1000W)",
+        "sku": "PCGM845",
+        "originPrice": "93.690.000₫",
+        "percentSale": 17,
+        "salePrice": "77.989.000₫",
+        "infos": [
+          "Mainboard:Z790",
+          "CPU:Intel Core i7",
+          "RAM: 32GB",
+          "SSD: 1TB",
+          "VGA: NVIDIA RTX 4070 Ti Super"
+        ],
+        "imageUrl": "https://hanoicomputercdn.com/media/product/250_83037_hacom_apollo_i14_i7_14700k_z790_32g_ram_rtx_4070ti_super_1000wx.jpg"
+      },
+      {
+        "id": 2,
+        "productName": "PC HTP 001 Raphael (AMD Ryzen 7700X /VGA RTX 4070S)",
+        "sku": "PCHA008",
+        "originPrice": "49.899.000₫",
+        "percentSale": 18,
+        "salePrice": "40.989.000₫",
+        "infos": [
+          "Mainboard:B650",
+          "CPU:AMD Ryzen 7",
+          "RAM: 32GB",
+          "SSD: 1TB",
+          "VGA: NVIDIA RTX 4070 Ti Super"
+        ],
+        "imageUrl": "https://hanoicomputercdn.com/media/product/250_87306_pc_hacom_001_raphael_amd_ryzen_7700x_vga_rtx_4070sxx.jpg"
+      },
+      {
+        "id": 3,
+        "productName": "PC HTP WS V2 (Dual Xeon E5-2680/ 64GB /GTX1650 4Gb)",
+        "sku": "PCWS518",
+        "originPrice": "17.899.000₫",
+        "percentSale": 21,
+        "salePrice": "14.199.000₫",
+        "infos": [
+          "Mainboard: X99",
+          "CPU: Intel Xeon",
+          "RAM: 64GB",
+          "SSD: 500GB",
+          "VGA: NVIDIA GTX 10 Series"
+        ],
+        "imageUrl": "https://hanoicomputercdn.com/media/product/250_86308_pc_hacom_ws_v2_3.jpg"
+      },
+      {
+        "id": 4,
+        "productName": "PC HACOM AI Advanced H1 (GeForce RTX 4090/i9-14900k/Z790/64GB RAM/2TB SSD/1600W) ( POWER BY ASUS )",
+        "sku": "PCWS501",
+        "originPrice": "169.499.000₫",
+        "percentSale": 11,
+        "salePrice": "15.299.000₫",
+        "infos": [
+          "Mainboard: Z790",
+          "CPU: Intel Core i9",
+          "RAM: 64GB",
+          "SSD: 2TB",
+          "VGA: NVIDIA RTX 40 Series"
+        ],
+        "imageUrl": "https://hanoicomputercdn.com/media/product/250_82828_pc_hacom_ai_advanced_h1_new2.jpg"
+      }
+    ]
+  }

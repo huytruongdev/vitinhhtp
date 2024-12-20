@@ -272,6 +272,33 @@ a {
   height: 619px;
   margin: 0 -5px;
 }
+.slider-product-one-content-container .slick-arrow{
+  background-color: red;
+}
+.slick-prev:before, .slick-next:before {
+  font-family: 'slick';
+  font-size: 40px;
+  line-height: 1;
+  opacity: 1;
+  color: red;
+  width:20px;
+}
+.slick-prev, .slick-next {
+  font-size: 0;
+  line-height: 0;
+  position: absolute;
+  top: 48%;
+  display: block;
+  width: 42px;
+  height: 0px;
+  padding: 0;
+  color: transparent;
+  border: none;
+  outline: none;
+  background: transparent;
+  z-index: 20;
+}
+
 .h-title-main {
   color: #333e48;
   font-size: 28px;
