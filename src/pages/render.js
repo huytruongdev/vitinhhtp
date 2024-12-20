@@ -6,6 +6,7 @@ const SearchPage = lazy(() => import('@/pages/Search/SearchPage.jsx'));
 const Cart = lazy(() => import('@/pages/Cart/Cart.jsx'));
 const Payment = lazy(() => import('@/pages/Payment/Payment.jsx'));
 const Login = lazy(() => import('@/pages/Login/Login.jsx'));
+const Register = lazy(() => import('@/pages/Register/Register.jsx'));
 
 export {
     Home,
@@ -13,5 +14,6 @@ export {
     SearchPage,
     Cart,
     Payment,
-    Login
+    Login,
+    Register
 }

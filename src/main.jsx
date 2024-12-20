@@ -14,7 +14,7 @@ import "slick-carousel/slick/slick.css";
 import App from './App';
 import Loader from './components/Loader/Loader';
 import NotFound from './pages/NotFound/NotFound';
-import { Cart, Home, Login, Payment, ProductDetail, SearchPage } from './pages/render';
+import { Cart, Home, Login, Payment, ProductDetail, Register, SearchPage } from './pages/render';
 
 function lazyComponent(element) {
   return (
@@ -36,6 +36,10 @@ const router = createBrowserRouter([
       {
         path: "/login",
         element: lazyComponent(<Login />)
+      },
+      {
+        path: "/register",
+        element: lazyComponent(<Register />)
       },
       {
         path: "/product-detail",

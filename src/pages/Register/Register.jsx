@@ -1,21 +1,14 @@
-import Button from "@mui/material/Button";
-import TextField from "@mui/material/TextField";
-import FormControlLabel from "@mui/material/FormControlLabel";
-import Checkbox from "@mui/material/Checkbox";
-import Link from "@mui/material/Link";
-import Grid from "@mui/material/Grid";
 import Box from "@mui/material/Box";
-import Typography from "@mui/material/Typography";
+import Button from "@mui/material/Button";
 import Container from "@mui/material/Container";
+import Grid from "@mui/material/Grid";
+import Link from "@mui/material/Link";
+import TextField from "@mui/material/TextField";
+import Typography from "@mui/material/Typography";
 
-const Login = () => {
+const Register = () => {
     const handleSubmit = (event) => {
         event.preventDefault();
-        const data = new FormData(event.currentTarget);
-        console.log({
-            email: data.get("email"),
-            password: data.get("password"),
-        });
     };
     return (
         <Container component="main" maxWidth="xs">
@@ -29,9 +22,29 @@ const Login = () => {
                 }}
             >
                 <Typography component="h1" variant="h5">
-                    Đăng nhập
+                    Đăng ký Tài khoản
                 </Typography>
                 <Box component="form" onSubmit={handleSubmit} noValidate sx={{ mt: 1 }}>
+                    <TextField
+                        margin="normal"
+                        required
+                        fullWidth
+                        id="fullName"
+                        label="Họ tên"
+                        name="fullName"
+                        autoComplete="fullName"
+                        autoFocus
+                    />
+                    <TextField
+                        margin="normal"
+                        required
+                        fullWidth
+                        id="phoneNumber"
+                        label="Số điện thoại"
+                        name="phoneNumber"
+                        autoComplete="phoneNumber"
+                        autoFocus
+                    />
                     <TextField
                         margin="normal"
                         required
@@ -52,9 +65,15 @@ const Login = () => {
                         id="password"
                         autoComplete="current-password"
                     />
-                    <FormControlLabel
-                        control={<Checkbox value="remember" color="primary" />}
-                        label="Lưu tài khoản"
+                    <TextField
+                        margin="normal"
+                        required
+                        fullWidth
+                        name="confirm-password"
+                        label="Nhập lại mật khẩu"
+                        type="password"
+                        id="confirm-password"
+                        autoComplete="current-password"
                     />
                     <Button
                         type="submit"
@@ -62,17 +81,12 @@ const Login = () => {
                         variant="contained"
                         sx={{ mt: 3, mb: 2 }}
                     >
-                        Đăng nhập
+                        Đăng ký
                     </Button>
                     <Grid container>
-                        <Grid item xs>
-                            <Link href="#" variant="body2">
-                                Quên mật khẩu
-                            </Link>
-                        </Grid>
                         <Grid item>
-                            <Link href="/register" variant="body2">
-                                {"Chưa có tài khoản? Đăng ký ngay"}
+                            <Link href="/login" variant="body2">
+                                {"Đã có tài khoản? Đăng nhập ngay"}
                             </Link>
                         </Grid>
                     </Grid>
@@ -82,4 +96,4 @@ const Login = () => {
     )
 }
 
-export default Login
+export default Register

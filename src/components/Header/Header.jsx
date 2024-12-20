@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
-    // <div>Header</div>
     <header className="header-2019">
       <div className="header-wrapper">
         <div className="bannerdichvutot">
@@ -188,12 +187,12 @@ const Header = () => {
                     </Link>
                   </div>
                   <div className="item lienket">
-                    <a target="_blank" className="taikhoan">
+                    <Link to="/register" className="taikhoan">
                       Đăng ký
-                    </a>
+                    </Link>
                   </div>
                   <div className="item btn-google">
-                    <a>
+                    <Link to='#'>
                       <div className="social-login-btn ">
                         <div className="social-login-icon">
                           <i className="fa-brands fa-google"></i>
@@ -202,10 +201,10 @@ const Header = () => {
                           Đăng nhập bằng Google
                         </div>
                       </div>
-                    </a>
+                    </Link>
                   </div>
                   <div className="item btn-facebook">
-                    <a>
+                    <Link to='#'>
                       <div className="social-login-btn">
                         <div className="social-login-icon">
                           <i className="fa-brands fa-facebook-f"></i>
@@ -214,7 +213,7 @@ const Header = () => {
                           Đăng nhập bằng Facebook
                         </div>
                       </div>
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </span>

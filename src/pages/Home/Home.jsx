@@ -4,7 +4,6 @@ import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 const Home = () => {
   const [laptops, setLaptops] = useState([]);
-  const [loading, setLoading] = useState(true);
   useEffect(() => {
     fetch("/data/Home.json")
       .then((response) => {
@@ -15,11 +14,9 @@ const Home = () => {
       })
       .then((data) => {
         setLaptops(data.laptops);
-        setLoading(false);
       })
       .catch((error) => {
         console.error("Error fetching data:", error);
-        setLoading(false);
       });
   }, []);
 
@@ -4360,7 +4357,7 @@ const Home = () => {
                         </div>
                         <div className="p-info">
                           <p className="p-name">
-                          <Link to="/product-detail">
+                            <Link to="/product-detail">
                               {laptop.productName}
                             </Link>
                           </p>
