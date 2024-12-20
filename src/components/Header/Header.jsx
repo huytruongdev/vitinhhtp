@@ -183,9 +183,9 @@ const Header = () => {
                 Tài Khoản
                 <div className="sub-right">
                   <div className="item lienket">
-                    <a target="_blank" className="taikhoan">
+                    <Link to="/login" className="taikhoan">
                       Đăng nhập
-                    </a>
+                    </Link>
                   </div>
                   <div className="item lienket">
                     <a target="_blank" className="taikhoan">
@@ -238,7 +238,7 @@ const Header = () => {
             </div>
             <div className="header-bottom-item">
               <div className="main-search">
-                <form action="/tim" name="search">
+                <form action="/tim" name="search" id="search">
                   <div className="input-text">
                     <input
                       type="text"
@@ -248,7 +248,7 @@ const Header = () => {
                       className="global-search"
                     />
                   </div>
-                  <Link to="/search-page"> 
+                  <Link to="/search-page">
                     <button className="search-icon">
                       <i className="fa-solid fa-magnifying-glass"></i>
                     </button>
