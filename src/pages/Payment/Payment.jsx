@@ -6,7 +6,31 @@ const HandleSubmit = (e) => {
   alert("Đặt hàng thành công!");
 };
 
+
+
+
+
 const Payment = () => {
+
+
+  const [cartItems, setCartItems] = useState([
+          { id: 1,masp: 'PCGM845', name: 'HACOM APOLLO i14-Black Myth Wukong (GeForce RTX 4070Ti Super /i7 14700K/Z790/32G RAM/1000W)', price: 77989000, quantity: 1, image: 'https://hanoicomputercdn.com/media/product/250_83037_hacom_apollo_i14_i7_14700k_z790_32g_ram_rtx_4070ti_super_1000wx.jpg' },
+          { id: 2,masp: 'CSA5017', name: 'Vỏ Case Asus ROG Hyperion GR701  (Full Tower / Màu Đen )', price: 18909000, quantity: 2, image: 'https://hanoicomputercdn.com/media/product/250_70769_gr701__12_.jpg' },
+          { id: 3,masp: 'MOLG253',name: 'Màn hình LG 24MR400-B (23.8 inch/FHD/IPS/100Hz/5ms', price: 2179000, quantity: 4, image: 'https://hanoicomputercdn.com/media/product/250_77685_man_hinh_lg_24mr400_b_850x850_2.jpg' },
+          { id: 4,masp: 'PCHA009',name: 'PC HACOM PROJECT ZERO WHITE ( Intel i5 14400F/ VGA RTX 4070 )', price: 39999000, quantity: 2, image: 'https://hanoicomputercdn.com/media/product/250_87631_pc_hacom_project_zero_white_intel_i5_14400f_vga_rtx_4070xx.jpg' },
+          { id: 5,masp: 'GPAS001',name: 'Tay cầm chơi game không dây Asus ROG Raikiri Pro', price: 3399000, quantity: 6, image: 'https://hanoicomputercdn.com/media/product/250_85807_rog_raikiri_pro_01.jpg' },
+          // Thêm các sản phẩm khác ở đây
+      ]);
+
+      const calculateTotal = () => {
+        return cartItems.reduce((total, item) => {
+            // if (selectedItems.has(item.id)) {
+            //     return total + item.price * item.quantity;
+            // }
+            return total + item.price * item.quantity;
+        }, 0);
+      };
+
   // States for checkbox and selected payment method
   const [isTaxInvoiceVisible, setTaxInvoiceVisible] = useState(false);
   const [selectedPaymentMethod, setSelectedPaymentMethod] = useState('2'); // Default value is '2'
@@ -47,7 +71,7 @@ const Payment = () => {
   };
 
   return (
-    <div>
+    
       <div className="container">
         <div className="bentren">
           <div className="bt1">
@@ -144,18 +168,20 @@ const Payment = () => {
                         </label>
                       </div>
                       <div id="js-item-pro-cart-b3">
-                                    <div class="item-pro-cart">
-                                        <a href="/pc-hacom-granite-ridge-002-amd-ryzen-7-9800x3d-vga-rtx-4070s" class="p-n-img">
-                                           <img src="https://hanoicomputercdn.com/media/product/250_87632_pc_hacom_granite_ridge_002_amd_ryzen_7_9800x3d_vga_rtx_4070s.jpg" alt="PC HACOM Granite Ridge 002 (AMD Ryzen 7 9800X3D/VGA RTX 4070S )" class="loading" data-was-processed="true"/>
-                                 </a>
-                                         <div class="p-n-info">
-                                            <a href="/pc-hacom-granite-ridge-002-amd-ryzen-7-9800x3d-vga-rtx-4070s" class="p-n-name">PC HACOM Granite Ridge 002 (AMD Ryzen 7 9800X3D/VGA RTX 4070S )</a>
-                                        <div class="p-n-quan">SL: x1</div>
-                                        </div> 
-                                        <div class="p-n-price">53,990,000 ₫</div>
-                                    </div>
+                      {/* Cart Item */}
+                      {cartItems.map((item) => (
+                        <div class="item-pro-cart" key={item.id}>
+                          <a  class="p-n-img">
+                            <img src={item.image} class="p-n-img" data-was-processed="true"/>
+                          </a>
+                          <div class="p-n-info">
+                            <a  class="p-n-name">{item.name}</a>
+                            <div class="p-n-quan">Số lượng : {item.quantity}X</div>
+                          </div> 
+                          <div class="p-n-price">{(item.price).toLocaleString()}₫</div>
+                        </div>
+                        ))}
                        </div>
-                      
                     </div>
                   </div>
                 </div>
@@ -181,23 +207,24 @@ const Payment = () => {
                             )}
                         </a>
                       </div>
-                      
-
-                      {isProductDetailsVisible && (
+                         {isProductDetailsVisible && (
                         <div className="list-b3-p" id="js-list-b3-p" style={{display: 'block'}}>
-                          <div className="item-n">
-                            <span className="list-b3-p-quan">1x</span>
-                            <a className="list-b3-p-name" href="/pc-hacom-granite-ridge-002-amd-ryzen-7-9800x3d-vga-rtx-4070s">
-                              PC HACOM Granite Ridge 002 (AMD Ryzen 7 9800X3D/VGA RTX 4070S)
+                          {/* Cart Item */}
+                          {cartItems.map((item) => (
+                            <div className="item-n" key={item.id}>
+                            <span className="list-b3-p-quan">{item.quantity}x</span>
+                            <a className="list-b3-p-name" >
+                            {item.name}
                             </a>
-                            <span className="list-b3-p-price">53.990.000₫</span>
-                          </div>
+                            <span className="list-b3-p-price">{((item.price*item.quantity).toLocaleString())}₫</span>
+                            </div>
+                            ))}
                         </div>
                       )}
                       <div className="cart-b3-total-price">
                         <span>Thành tiền</span>
                         <b>
-                          <span className="total-cart-payment">53.990.000₫</span>
+                          <span className="total-cart-payment">{calculateTotal().toLocaleString()}₫</span>
                         </b>
                       </div>
                       <div className="cart-b3-vat">(Đã bao gồm VAT nếu có)</div>
@@ -298,7 +325,7 @@ const Payment = () => {
           </div>
         </div>
       </div>
-    </div>
+    
   );
 };
 
