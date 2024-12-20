@@ -31,6 +31,13 @@ const Payment = () => {
         }, 0);
       };
 
+
+       // Tính tổng số lượng sản phẩm
+     const calculateTotalQuantity = () => {
+      return cartItems.reduce((totalQuantity, item) => totalQuantity + item.quantity, 0);
+  };
+
+
   // States for checkbox and selected payment method
   const [isTaxInvoiceVisible, setTaxInvoiceVisible] = useState(false);
   const [selectedPaymentMethod, setSelectedPaymentMethod] = useState('2'); // Default value is '2'
@@ -196,12 +203,12 @@ const Payment = () => {
                     </div>
                     <div className="box-b3-product-list">
                       <div className="title-n-b3-p">
-                        <span>1</span> sản phẩm
+                        <span>{calculateTotalQuantity()}</span> sản phẩm
                         <a href="javascript:;" onClick={viewMoreProductCart}>
                           {isProductDetailsVisible ? (
-                            <>" Ẩn thông tin "<i className="fas fa-sort-up-down"></i></>
+                            <> " Ẩn thông tin "<i className="fas fa-sort-up-down"></i></>
                            ):(
-                            <>" Xem thông tin"
+                            <> " Xem thông tin"
                             <i className="fas fa-sort-up-up">
                               </i></>
                             )}
