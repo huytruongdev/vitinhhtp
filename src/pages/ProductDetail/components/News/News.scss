@@ -1,0 +1,17 @@
+.news-container {
+  width: 100%;
+  img {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .title {
+    font-size: 16px;
+    margin-bottom: 4px;
+    display: block;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+  &:hover {
+    color: inherit;
+  }
+}
