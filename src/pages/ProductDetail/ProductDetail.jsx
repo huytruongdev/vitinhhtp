@@ -70,6 +70,22 @@ const ProductDetail = () => {
                   <b>Mua ngay</b>
                   <p>Giao nhanh tận nơi, miễn phí toàn quốc</p>
                 </button>
+                <div className="upgrade-group">
+                  <div className="item-left">
+                    <img src="https://hacom.vn/template/2024/images/pd-icon-len-doi.png" alt="" />
+                    <div className="text">
+                      <p>Chỉ còn:</p>
+                      <p className="item-price">
+                        1.743.200
+                        <u>đ</u>
+                      </p>
+                      <p>Khi lên đời từ máy cũ</p>
+                    </div>
+                  </div>
+                  <a className="upgrade-btn">
+                    Lên Đời Ngay
+                  </a>
+                </div>
               </div>
             </Grid>
           </div>

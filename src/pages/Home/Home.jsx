@@ -4360,7 +4360,9 @@ const Home = () => {
                         </div>
                         <div className="p-info">
                           <p className="p-name">
-                            <a href="#">{laptop.productName}</a>
+                          <Link to="/product-detail">
+                              {laptop.productName}
+                            </Link>
                           </p>
                           <span className="p-mprice">{laptop.originPrice}</span>
                           <span className="p-discount">
@@ -4439,7 +4441,8 @@ const Home = () => {
                         <div className="p-info">
                           <p className="p-name">
                             <Link to="/product-detail">
-                              {laptop.productName}</Link>
+                              {laptop.productName}
+                            </Link>
                           </p>
                           <span className="p-mprice">{laptop.originPrice}</span>
                           <span className="p-discount">
