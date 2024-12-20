@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import RatingShow from "../../components/Star/RatingShow";
 import './ProductDetail.scss';
 import ProductGallery from "./components/ProductGallery/ProductGallery";
+import Spec from "./components/Spec/Spec";
 
 const ProductDetail = () => {
   return (
@@ -80,11 +81,15 @@ const ProductDetail = () => {
             </div>
           </Grid>
           <Grid size={5}>
-            Thông số kỹ thuật
+            <div className="group-container">
+              <h2 className="group-title">Thông số kỹ thuật</h2>
+              <Spec />
+
+            </div>
           </Grid>
           <Grid size={7}>
             <div className="group-container">
-              <h2 className="group-title">Nhận xét và Đánh giá</h2>
+              <h2 className="group-title">Nhận xét và đánh giá</h2>
 
               <div className="review">
 

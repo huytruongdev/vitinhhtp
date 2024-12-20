@@ -311,3 +311,19 @@ iframe {
         font-size: 11px;
     }
 }
+
+.spec {
+  border: 0;
+  margin: 15px 5px;
+  width: 100%;
+  td {
+    padding: 5px;
+  }
+  tr:nth-child(even) {
+    background-color: #f5f5ff;
+    border: 1px solid #eee;
+  }
+  .label {
+    font-weight: 600;
+  }
+}
