@@ -1,6 +1,6 @@
 
 import './SearchPage.css';
-import Nav from 'react-bootstrap/Nav';
+
 import Form from 'react-bootstrap/Form';
 import ChevronRightSharpIcon from '@mui/icons-material/ChevronRightSharp';
 import GradeRoundedIcon from '@mui/icons-material/GradeRounded';
@@ -8,6 +8,7 @@ import KeyboardDoubleArrowRightSharpIcon from '@mui/icons-material/KeyboardDoubl
 import ShoppingCartSharpIcon from '@mui/icons-material/ShoppingCartSharp';
 import DynamicFeedSharpIcon from '@mui/icons-material/DynamicFeedSharp';
 import { useState } from "react";
+
 
 
 const SearchPage = () => {
@@ -18,6 +19,31 @@ const SearchPage = () => {
     const [leftPosition, setLeftPosition] = useState(0);
     const [rightPosition, setRightPosition] = useState(0);
 
+
+
+    const handleSliderChange = (event) => {
+        setMinPrice(event.target.value);
+        const left = (minPrice / 100000000) * 240;
+
+        setLeftPosition(left)
+      };
+
+      const handleSliderChangeRight = (event) => {
+        const sliderValue = event.target.value; // Giá trị hiện tại của thanh trượt
+        const min = 50000000; // Giá trị tối thiểu
+        const max = 100000000; // Giá trị tối đa
+    
+        // Cập nhật giá trị hiển thị
+        const reversedValue = max - (sliderValue - min);
+        setMaxPrice(reversedValue);
+        console.log(reversedValue);
+        // Tính toán khoảng cách `right`    
+        const newRight = ((sliderValue - min) / (max - min)) * 120; // Tính khoảng cách `right` (120px tối đa)
+        setRightPosition(newRight);
+      };
+
+
+
     const formatNumber = (value) => {
         return value.replace(/\B(?=(\d{3})+(?!\d))/g, ".");
       };
@@ -25,7 +51,7 @@ const SearchPage = () => {
       const handleLeftInputChange = (event) => {
         const rowvalue = event.target.value.replace(/[^\d]/g, "");
         const formattedValue = formatNumber(rowvalue);
-        const left = (rowvalue / 100000000) * 250;
+        const left = (rowvalue / 100000000) * 240;
         console.log("Giá trị left: " + left)
         setLeftPosition(left);
         if (formattedValue.length <= 10) {
@@ -41,7 +67,7 @@ const SearchPage = () => {
         const value = event.target.value.replace(/[^\d]/g, "");
         
         const formattedValue = formatNumber(value); 
-        const right = (value / 100000000) * 250;
+        const right = (value / 100000000) * 240;
         if (formattedValue.length <= 10) {
              setRightPosition(right); 
             setMaxPrice(formattedValue); 
@@ -75,51 +101,21 @@ const SearchPage = () => {
                          <span className='filter-title'> DANH MỤC TÌM THẤY </span>
                          <div className='filter-rulers'></div>
                         <div className='p-filter-list-value'>
-                            <Nav defaultActiveKey="/home" className="flex-column">
-                                <Nav.Link href="#" style={{
-                                    color:'#212529',
-                                    fontsize: '12px',
-                                    
-                                }} >
-                                <KeyboardDoubleArrowRightSharpIcon style={{ fontSize: 'small'}} />
-                                Case - Vỏ máy tính - (1)
-                                </Nav.Link>
-                                <Nav.Link href="#" eventKey="link-1"style={{
-                                    // line-height:'2',
-                                    // padding-left:'10px',
-                                    color:'#212529',
-                                    fontsize: '12px',
-                                    
-                                }} className="custom-link">
-                                    <KeyboardDoubleArrowRightSharpIcon style={{ fontSize: 'small'}} />
-                                    Gian Hàng Thanh Lý - (2)
-                                </Nav.Link>
-                                <Nav.Link href="#" eventKey="link-2" style={{
-                                    color:'#212529',
-                                    fontsize: '12px',
-                                    
-                                }}>
-                                    <KeyboardDoubleArrowRightSharpIcon style={{ fontSize: 'small'}} />
-                                    Hàng Hiệu Cũ, Siêu Tiết Kiệm - (3)
-                                </Nav.Link>
-                                <Nav.Link eventKey="link-3" style={{
-                                    color:'#212529',
-                                    fontsize: '12px',
-                                    
-                                }} className="custom-link">
-                                    <KeyboardDoubleArrowRightSharpIcon style={{ fontSize: 'small'}} />
-                                    Thiết Bị Chơi Game Cũ - (1)
-                                </Nav.Link>
-                                <Nav.Link href="#" eventKey="link-4" style={{
-                                    color:'#212529',
-                                    fontsize: '12px',
-                                    
-                                }} className="custom-link">
-                                    <KeyboardDoubleArrowRightSharpIcon style={{ fontSize: 'small'}} />
-                                    Máy Chơi Game, Tay Game Cũ - (1)
-                                </Nav.Link>
 
-                            </Nav>
+                        <ul className="list-brand-check list-unstyled">
+                        
+                        <li><KeyboardDoubleArrowRightSharpIcon style={{ fontSize: 'small'}} /> <a href="#">Linh Kiện Máy Tính - (1198)</a> </li>
+                        
+                        <li><KeyboardDoubleArrowRightSharpIcon style={{ fontSize: 'small'}} /> <a href="#">Mainboard - Bo mạch chủ - (290)</a> </li>
+                        
+                        <li><KeyboardDoubleArrowRightSharpIcon style={{ fontSize: 'small'}} /> <a href="#">CPU - Bộ vi xử lý - (103)</a> </li>
+                        
+                        <li><KeyboardDoubleArrowRightSharpIcon style={{ fontSize: 'small'}} /><a href="#">RAM - Bộ nhớ trong - (196)</a> </li>
+                        
+                        <li><KeyboardDoubleArrowRightSharpIcon style={{ fontSize: 'small'}} /><a href="#">Ổ cứng HDD - (111)</a> </li>
+                        
+                        <li><KeyboardDoubleArrowRightSharpIcon style={{ fontSize: 'small'}} /><a href="#">VGA - Card Màn Hình - (268)</a> </li>
+                         </ul>
                         </div>
                     </div>
 
@@ -128,41 +124,38 @@ const SearchPage = () => {
                         <div className='filter-rulers'></div>
                         <div className='p-filter-list-value'>
                         <div className="list-brand-check">
+
                         <Form>
                             {[''].map((type) => (
                             <div key={`default-${type}`} className="mb-3">
                             <Form.Check // prettier-ignore
-                            className='form-check'
                             type={'checkbox'}
                             id={`default-${type}`}
                             label={`ASUS ${type}`}/>
 
-                            <Form.Check
-                                className='form-check'
-                                type={'checkbox'}
-                                label={`LOGITECH ${type}`}
-                                id={`default-${type}`}/>
-                            <Form.Check
-                                className='form-check'
-                                type={'checkbox'}
-                                label={`TP-LINK ${type}`}
-                                id={`default-${type}`}/>
-                            <Form.Check                          
-                                className='form-check'                    
-                                type={'checkbox'}
-                                label={`DAREU ${type}`}
-                                id={`default-${type}`}/> 
+                            <Form.Check // prettier-ignore
+                            type={'checkbox'}
+                            id={`default-${type}`}
+                            label={`LOGITECH ${type}`}/>
 
+                            <Form.Check // prettier-ignore
+                            type={'checkbox'}
+                            id={`default-${type}`}
+                            label={`TP-LINK ${type}`}/>
 
-                            <Form.Check
-                                className='form-check'                
-                                type={'checkbox'}
-                                label={`AKKO ${type}`}
-                                id={`default-${type}`}/>                                                               
+                            <Form.Check // prettier-ignore
+                            type={'checkbox'}
+                            id={`default-${type}`}
+                            label={`DAREU ${type}`}/>
+
+                            <Form.Check // prettier-ignore
+                            type={'checkbox'}
+                            id={`default-${type}`}
+                            label={`AKKO ${type}`}/>
+                                                             
                             </div>
                         ))}
                         </Form>
-
 
                         </div>
                         
@@ -207,6 +200,9 @@ const SearchPage = () => {
                         </Form>
 
                         <div className='slider-range'>
+                            <input type="range" id="progressBar" className="progress-bar-l" value="0" min="0" max="50000000"  onChange={handleSliderChange}/>
+                            <input type="range" id="progressBar" className="progress-bar-r" value="0" max="100000000" min="51000000" onChange={handleSliderChangeRight} />
+                            
                             <div className='ui-slider-range ui-corner-all ui-widget-header'>
                             <div className='button-slider-l' style={{ left: `${leftPosition}px` }}></div>
 
@@ -331,8 +327,8 @@ const SearchPage = () => {
                                     <img src="assets/1610_bang-gia-may-vi-tinh.png" alt="" className='img-load'/>
                                     <div className='tool-tip' style={{
                                           display: block ? 'block' : 'none',
-                                          left: `calc(0px + ${mousePosition.x}px)`, // ❌ Lỗi ReferenceError
-                                        marginTop: `calc(-500px + ${mousePosition.y}px)`
+                                          left: `calc(-500px + ${mousePosition.x}px)`, // ❌ Lỗi ReferenceError
+                                        marginTop: `calc(-850px + ${mousePosition.y}px)`
 
                                     }} > 
                                         <a href="" className='hover_name'>
