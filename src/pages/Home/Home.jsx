@@ -2,6 +2,8 @@ import "./Home.scss";
 import Slider from "react-slick";
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import PreBuiltItem from "./components/PreBuiltItem";
+import PCPreBuilt from "./components/PCPreBuilt";
 const Home = () => {
   const [laptops, setLaptops] = useState([]);
   useEffect(() => {
@@ -4753,6 +4755,7 @@ const Home = () => {
               </a>
             </div>
             <div className="slider-product-one-content-container">
+              <PCPreBuilt />
               <Slider {...multiSlider}>
                 {laptops.map((laptop) => (
                   <div
